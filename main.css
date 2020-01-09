@@ -1,10 +1,22 @@
 /* main.css file */
 
-body, html {
+html {
 	font-size: 16px;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+	-moz-osx-font-smoothing:grayscale;
+	-webkit-font-smoothing:antialiased;
+	font-feature-settings: "kern" 1;
+	font-kerning: normal;
+	font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
+	line-height: 1.5;
+	color: #222;
+}
+main, footer {
+	margin: auto 2em;
 }
 h1, h2, h3, h4, h5, p {
-	max-width: 740px;
+	max-width: 40rem;
 }
 p {
 	font-size: 1rem;
