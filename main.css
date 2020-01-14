@@ -1,23 +1,50 @@
 /* main.css file */
-
+:root {
+  /* Set global CSS custom properties */
+  /* Spacing, base unit, t-shirt sizing (s,m,l,xl) */
+  --spacing-unit: 8px;
+  --s: 8px;
+}
 html {
-	font-size: 16px;
-	-ms-text-size-adjust:100%;
-	-webkit-text-size-adjust:100%;
-	-moz-osx-font-smoothing:grayscale;
-	-webkit-font-smoothing:antialiased;
-	font-feature-settings: "kern" 1;
-	font-kerning: normal;
-	font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
-	line-height: 1.5;
-	color: #222;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
+  line-height: 1.5;
+  color: #222;
 }
-main, footer {
-	margin: auto 2em;
+main,
+footer {
+  margin: auto 2em;
 }
-h1, h2, h3, h4, h5, p {
-	max-width: 40rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  max-width: 40rem;
 }
 p {
-	font-size: 1rem;
+  font-size: 1rem;
+}
+/*----------------------------
+	# Miscellaneous debris
+----------------------------*/
+.no-bullet {
+  /* Removes bullets from lists and resets padding */
+  padding-left: 0;
+  list-style-type: none;
+}
+.link-arrow::after {
+  /* Adds a right pointing arrow after a link,
+		good for 'Read more →' or 'See all →' type of links. */
+  content: '\2192';
+  display: inline-block;
+  margin-left: var(--s);
+  text-decoration: none;
 }
