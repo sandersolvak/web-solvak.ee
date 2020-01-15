@@ -17,6 +17,7 @@ html {
   line-height: 1.5;
   color: #222;
 }
+nav,
 main,
 footer {
   margin: auto 2em;
