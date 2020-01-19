@@ -27,11 +27,15 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+img {
   max-width: 40rem;
 }
 p {
   font-size: 1rem;
+}
+.post-meta {
+  /* Meta information on blog posts like tags */
 }
 /*----------------------------
 	# Miscellaneous debris
