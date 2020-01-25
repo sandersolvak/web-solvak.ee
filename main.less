@@ -1,63 +1,37 @@
 // out: main.css, sourcemap: false, compress: false
 
-/* main.css file */
-
-:root { /* Set global CSS custom properties */
+:root {
+	/* Set global CSS custom properties */
 
 	/* Spacing, base unit, t-shirt sizing (s,m,l,xl) */
 	--spacing-unit: 8px;
+	--xs: 4px;
 	--s: 8px;
+	--m: 16px;
+	--l: 32px;
+	--xl: 80;
+
+	/* Colors */
+	--brand-color: hsla(44, 100%, 54%, 1);
+	--brand-color--l: hsla(44, 100%, 54%, 0.24);
+	--heading-color: hsla(44, 20%, 10%, 1.0);
+	--text-color: hsla(44, 0%, 10%, 0.82);
+	--meta-color: hsla(44, 0%, 26%, 0.66);
+	--red-color: hsla(359, 84%, 44%, 1.0);
+	--light-gray-color: hsla(44, 0%, 26%, 0.08);
+
+	/* font sizes */
+	--text: 1rem;
+	--text-s: 0.88rem;
+	--text-l: 1.1rem;
 }
 
 /*----------------------------
-	# Fonts
+	# Defaults and resets
 ----------------------------*/
-
-@font-face {
-    font-family: 'libre_franklin';
-    src: url('./assets/fonts/librefranklin-regular.woff2') format('woff2'),
-         url('./assets/fonts/librefranklin-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'libre_franklin';
-    src: url('./assets/fonts/librefranklin-bold.woff2') format('woff2'),
-         url('./assets/fonts/librefranklin-bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'libre_franklin';
-    src: url('./assets/fonts/librefranklin-bolditalic.woff2') format('woff2'),
-         url('./assets/fonts/librefranklin-bolditalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'libre_franklin';
-    src: url('./assets/fonts/librefranklin-italic.woff2') format('woff2'),
-         url('./assets/fonts/librefranklin-italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'prospectus';
-    src: url('./assets/fonts/prospectusstd-bold.woff2') format('woff2'),
-         url('./assets/fonts/prospectusstd-bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'prospectus';
-    src: url('./assets/fonts/prospectusstd-bold-italic.woff2') format('woff2'),
-         url('./assets/fonts/prospectusstd-bold-italic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
+figure, blockquote {
+	margin: 0;
+	padding: 0;
 }
 
 html {
@@ -71,29 +45,204 @@ html {
 	font-kerning: normal;
 	font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
 	line-height: 1.5;
-	color: #222;
+	background-color: #f9f8f3;
+	@media(max-width: 420px) {
+		font-size: 15px;
+	}
 }
 nav, main, footer {
-	margin: auto 2em;
+	margin: auto 2rem;
+	@media(max-width: 420px) {
+		margin: auto 1rem;
+	}
 }
-p, img {
-	max-width: 40rem;
+img {
+	max-width: 42rem;
+	width: 100%;
 }
+
+/*----------------------------
+	# Grids
+----------------------------*/
+
+/*----------------------------
+	# Typography
+----------------------------*/
+
+@font-face {
+    font-family: 'prospectus';
+    src: url('./assets/fonts/prospectus-black.woff2') format('woff2'),
+         url('./assets/fonts/prospectus-black.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'prospectus';
+    src: url('./assets/fonts/prospectus-black-italic.woff2') format('woff2'),
+         url('./assets/fonts/prospectus-black-italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'libre_franklin';
+    src: url('./assets/fonts/librefranklin-regular.woff2') format('woff2'),
+         url('./assets/fonts/librefranklin-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'libre_franklin';
+    src: url('./assets/fonts/librefranklin-italic.woff2') format('woff2'),
+         url('./assets/fonts/librefranklin-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'libre_franklin';
+    src: url('./assets/fonts/librefranklin-semibold.woff2') format('woff2'),
+         url('./assets/fonts/librefranklin-semibold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'libre_franklin';
+    src: url('./assets/fonts/librefranklin-semibold-italic.woff2') format('woff2'),
+         url('./assets/fonts/librefranklin-semibold-italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
 h1, h2, h3, h4, h5 {
 	font-family: 'prospectus';
+	line-height: 1.1;
 	max-width: 40rem;
+	color: var(--heading-color);
+}
+h1 {
+	font-size: 3rem;
+	margin-top: 4rem;
+	margin-bottom: 0.6rem;
+}
+h2 {
+	font-size: 2.2rem;
+	margin-top: 3rem;
+	margin-bottom: 0.6rem;
+}
+h3 {
+	font-family: 'libre_franklin';
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 0.6rem;
+}
+h4 {
+	font-family: 'libre_franklin';
+	font-size: 1.2rem;
+	margin-top: 2rem;
+	margin-bottom: 0.6rem;
 }
 p {
 	font-size: 1rem;
-}
-
-.post-meta {  /* Meta information on blog posts like tags */
-
+	line-height: 1.8;
+	color: var(--text-color);
+	max-width: 42rem;
+	&.lede {
+		font-size: var(--text-l);
+		color: var(--heading-color);
+		margin-top: var(--l);
+		margin-bottom: var(--l);
 	}
-
-.lede {
-
 }
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+cite {
+	font-style: italic;
+}
+::selection {
+	background-color: var(--brand-color--l);
+}
+
+a {
+	text-decoration: underline;
+	text-decoration-color: var(--brand-color);
+	text-decoration-skip: ink;
+	text-decoration-thickness: 2px;
+	color: var(--heading-color);
+	transition: all 0.2s;
+	&:hover {
+		text-decoration-thickness: 1px;
+		transition: all 0.2s;
+		background-color: ;
+		&::after {
+			/* colors the arrow on .link-arrow::after type of links on hover */
+			color: #ffbe12;
+			transition: all 0.2s;
+			transform: translateX(1px);
+		}
+	}
+	& .link-arrow::after {
+		/* Adds a right pointing arrow after a link,
+			good for 'Read more →' or 'See all →' type of links. */
+		content: '\2192';
+		display: inline-block;
+		margin-left: var(--s);
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+}
+
+.post-meta, time {  /* Meta information on blog posts like dates and tags */
+	font-size: 0.88rem;
+	line-height: 1.1;
+	margin:0.2em 0;
+	color: var(--meta-color);
+	& a {
+		color: var(--meta-color);
+		text-decoration-color: var(--meta-color);
+		text-decoration-thickness: 1px;
+		&:hover {
+			color: var(--text-color);
+			text-decoration-color: var(--brand-color);
+		}
+	}
+}
+
+.pullquote {
+	padding: var(--l);
+	margin-top: var(--l);
+	margin-bottom: var(--l);
+	border-left: 3px solid var(--brand-color);
+	transform: translateX(-16px);
+	& blockquote {
+		margin-bottom: var(--s);
+		font-size: var(--text-l);
+	}
+	& figcaption {
+		font-size: var(--text-s);
+		color: var(--text-color);
+	}
+}
+
+/*----------------------------
+	# Lists
+----------------------------*/
+ul, ol {
+	padding-left: 32px;
+	& ul,
+	& ol {
+		padding-left: 24px;
+		margin-top: 0.4rem;
+		margin-bottom: 1rem;
+	}
+	& li {
+		margin-bottom: 0.8rem;
+	}
+}
+
 /*----------------------------
 	# Miscellaneous debris
 ----------------------------*/
@@ -110,4 +259,10 @@ p {
 	display: inline-block;
 	margin-left: var(--s);
 	text-decoration: none;
+}
+pre {
+	background-color: var(--light-gray-color);
+	padding: var(--s) var(--l);
+	border-radius: var(--xs);
+	overflow: scroll;
 }
