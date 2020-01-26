@@ -19,6 +19,9 @@
   --text: 1rem;
   --text-s: 0.88rem;
   --text-l: 1.1rem;
+  /* animation */
+  --fast: 0.2s;
+  --slow: 0.8s;
 }
 /*----------------------------
 	# Defaults and resets
@@ -58,13 +61,13 @@ footer {
     margin: auto 1rem;
   }
 }
+article {
+  margin: 80px 0;
+}
 img {
   max-width: 42rem;
   width: 100%;
 }
-/*----------------------------
-	# Grids
-----------------------------*/
 /*----------------------------
 	# Typography
 ----------------------------*/
@@ -166,17 +169,17 @@ a {
   text-decoration-skip: ink;
   text-decoration-thickness: 2px;
   color: var(--heading-color);
-  transition: all 0.2s;
+  transition: var(--fast);
 }
 a:hover {
   text-decoration-thickness: 1px;
-  transition: all 0.2s;
+  transition: var(--fast);
   background-color: ;
 }
 a:hover::after {
   /* colors the arrow on .link-arrow::after type of links on hover */
   color: #ffbe12;
-  transition: all 0.2s;
+  transition: var(--fast);
   transform: translateX(1px);
 }
 a .link-arrow::after {
@@ -186,7 +189,15 @@ a .link-arrow::after {
   display: inline-block;
   margin-left: var(--s);
   text-decoration: none;
-  transition: all 0.2s;
+  transition: var(--fast);
+}
+a img {
+  /* Image link like movie screenshot posts on the journal */
+  box-shadow: 0px 0px 0px var(--brand-color);
+  transition: var(--slow);
+}
+a:hover img {
+  box-shadow: 0px 4px 0px var(--brand-color);
 }
 .post-meta,
 time {
@@ -240,6 +251,32 @@ ol ol {
 ul li,
 ol li {
   margin-bottom: 0.8rem;
+}
+/*----------------------------
+	# Grids
+----------------------------*/
+nav {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 80px));
+  grid-auto-rows: 80px;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--heading-color);
+  font-size: var(--text-s);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+nav a:hover,
+nav a.active {
+  background-color: var(--brand-color);
 }
 /*----------------------------
 	# Miscellaneous debris
