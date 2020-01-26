@@ -264,7 +264,12 @@ nav {
 	grid-template-columns: repeat(auto-fill, minmax(80px, 80px));
 	grid-auto-rows: 80px;
 	grid-auto-flow: row;
-	grid-gap: 24px;
+	grid-gap: 16px;
+	@media(max-width: 420px) {
+		grid-template-columns: repeat(auto-fill, minmax(72px, 72px));
+		grid-auto-rows: 72px;
+		grid-gap: 8px;
+	}
 	& a {
 		text-decoration: none;
 		color: var(--heading-color);
@@ -275,9 +280,32 @@ nav {
 		justify-content: center;
 		height: 100%;
 		width: 100%;
-		&:hover,
-		&.active {
+		&:hover {
 			background-color: var(--brand-color);
+			transform: scale(1.02);
+		}
+		&:active {
+			transform: scale(1);
+		}
+		&.active {
+			text-decoration: underline;
+			text-decoration-thickness: 2px;
+			text-decoration-offset: 2px;
+			text-decoration-color: var(--brand-color);
+		}
+		&.home {
+			& svg {
+				fill: var(--brand-color);
+				width: 40px;
+				transition: var(--slow);
+			}
+			&:hover,
+			&.active {
+				background: var(--brand-color);
+				& svg {
+					fill: white;
+				}
+			}
 		}
 	}
 }

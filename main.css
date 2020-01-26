@@ -261,7 +261,14 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(80px, 80px));
   grid-auto-rows: 80px;
   grid-auto-flow: row;
-  grid-gap: 24px;
+  grid-gap: 16px;
+}
+@media (max-width: 420px) {
+  nav {
+    grid-template-columns: repeat(auto-fill, minmax(72px, 72px));
+    grid-auto-rows: 72px;
+    grid-gap: 8px;
+  }
 }
 nav a {
   text-decoration: none;
@@ -274,9 +281,31 @@ nav a {
   height: 100%;
   width: 100%;
 }
-nav a:hover,
-nav a.active {
+nav a:hover {
   background-color: var(--brand-color);
+  transform: scale(1.02);
+}
+nav a:active {
+  transform: scale(1);
+}
+nav a.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-offset: 2px;
+  text-decoration-color: var(--brand-color);
+}
+nav a.home svg {
+  fill: var(--brand-color);
+  width: 40px;
+  transition: var(--slow);
+}
+nav a.home:hover,
+nav a.home.active {
+  background: var(--brand-color);
+}
+nav a.home:hover svg,
+nav a.home.active svg {
+  fill: white;
 }
 /*----------------------------
 	# Miscellaneous debris
