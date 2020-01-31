@@ -1,4 +1,4 @@
-// out: main.css, sourcemap: false, compress: false
+// out: main.css, sourcemap: false, compress: true
 
 :root {
 	/* Set global CSS custom properties */
@@ -9,7 +9,7 @@
 	--s: 8px;
 	--m: 16px;
 	--l: 32px;
-	--xl: 80;
+	--xl: 80px;
 
 	/* Colors */
 	--brand-color: hsla(44, 100%, 54%, 1);
@@ -33,12 +33,8 @@
 /*----------------------------
 	# Defaults and resets
 ----------------------------*/
-figure, blockquote {
-	margin: 0;
-	padding: 0;
-}
 
-html {
+html, body {
 	font-family: 'libre_franklin';
 	font-size: 16px;
 	-ms-text-size-adjust:100%;
@@ -50,22 +46,16 @@ html {
 	font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
 	line-height: 1.5;
 	background-color: #f9f8f3;
+	padding: 0;
+	margin: 0;
 	@media(max-width: 420px) {
 		font-size: 15px;
 	}
 }
-nav, main, footer {
-	margin: auto 2rem;
-	@media(max-width: 420px) {
-		margin: auto 1rem;
-	}
-}
-article {
-	margin: 80px 0;
-}
-img {
-	max-width: 42rem;
-	width: 100%;
+
+figure, blockquote {
+	margin: 0;
+	padding: 0;
 }
 
 /*----------------------------
@@ -119,41 +109,42 @@ img {
 h1, h2, h3, h4, h5 {
 	font-family: 'prospectus';
 	line-height: 1.1;
-	max-width: 40rem;
+	max-width: 64ch;
+	margin-bottom: 0.6rem;
 	color: var(--heading-color);
 }
-h1 {
+h1, .h1 {
 	font-size: 3rem;
 	margin-top: 4rem;
-	margin-bottom: 0.6rem;
+	line-height: 0.9;
 }
-h2 {
+h2, .h2 {
 	font-size: 2.2rem;
 	margin-top: 3rem;
-	margin-bottom: 0.6rem;
 }
 h3 {
 	font-family: 'libre_franklin';
 	font-size: 1.5rem;
 	margin-top: 2rem;
-	margin-bottom: 0.6rem;
 }
 h4 {
 	font-family: 'libre_franklin';
 	font-size: 1.2rem;
 	margin-top: 2rem;
-	margin-bottom: 0.6rem;
 }
 p {
 	font-size: 1rem;
 	line-height: 1.8;
 	color: var(--text-color);
-	max-width: 42rem;
+	max-width: 64ch;
 	&.lede {
 		font-size: var(--text-l);
 		color: var(--heading-color);
-		margin-top: var(--l);
+		margin-top: var(--m);
 		margin-bottom: var(--l);
+		@media(max-width: 848px) {
+			margin-top: var(--l);
+		}
 	}
 }
 em {
@@ -177,7 +168,7 @@ a {
 	color: var(--heading-color);
 	transition: var(--fast);
 	&:hover {
-		text-decoration-thickness: 1px;
+		text-decoration-thickness: 3px;
 		transition: var(--fast);
 		background-color: ;
 		&::after {
@@ -194,6 +185,7 @@ a {
 		display: inline-block;
 		margin-left: var(--s);
 		text-decoration: none;
+		font-weight: bold;
 		transition: var(--fast);
 	}
 	& img {
@@ -211,7 +203,7 @@ a {
 .post-meta, time {  /* Meta information on blog posts like dates and tags */
 	font-size: 0.88rem;
 	line-height: 1.1;
-	margin:0.2em 0;
+	margin:0.8em 0;
 	color: var(--meta-color);
 	& a {
 		color: var(--meta-color);
@@ -255,8 +247,126 @@ ul, ol {
 		margin-bottom: 0.8rem;
 	}
 }
+
 /*----------------------------
-	# Grids
+	# Grids & blocks
+----------------------------*/
+nav, main {
+	max-width: 1280px;
+	margin: auto;
+}
+article {
+	margin: auto;
+	&.post,
+	&.post-wide,
+	&.post-portrait {
+		margin-top: var(--l);
+		padding-bottom: var(--xl);
+		margin-bottom: var(--xl);
+		border-bottom: 1px solid var(--light-gray-color);
+		& .cover-img img,
+		& .cover-img,
+		& figure img {
+			width: 100%;
+			height: auto;
+			max-width: 1280px;
+			background-color: var(--light-gray-color);
+			line-height: 0;
+		}
+		& .post-body {
+			grid-area: body;
+		}
+	}
+	&:last-child {
+		border-bottom: none;
+	}
+	&.post { /* Full size journal post with a big cover image, title, meta, and body content */
+		display: grid;
+		grid-template-columns: 32px minmax(300px, 1fr) minmax(476px, 1fr) 32px;
+		grid-template-rows: auto;
+		grid-template-areas:
+		"cover cover cover cover"
+		". header body ."
+		". . body .";
+		@media(max-width: 840px) {
+			grid-template-columns: 24px 1fr 24px;
+			grid-template-areas:
+			". cover ."
+			". header ."
+			". body .";
+		}
+		& .cover-img {
+			grid-area: cover;
+			margin-bottom: var(--m);
+			object-fit: contain;
+			max-height: 520px;
+		}
+		& header {
+			grid-area: header;
+			position: sticky;
+			top: 1em;
+			margin-top: 2em;
+			@media(max-width: 840px)
+		 {
+			 position: initial;
+		 }
+			& :first-child {
+				margin-top: 1.2rem;
+			}
+		}
+		& .post-body {
+			margin-top: 2em;
+		}
+		& .cover-img {
+			grid-area: cover;
+		}
+	}
+	&.post-wide { /* Posts with a wide main image, like movie screenshot posts */
+		display: grid;
+		grid-template-columns: 32px 1fr 32px;
+		grid-template-areas:
+		"cover cover cover"
+		". body .";
+		@media(max-width: 840px) {
+			grid-template-columns: 24px 1fr 24px;
+			grid-template-areas:
+			". cover ."
+			". body .";
+		}
+		& .post-body {
+			@media(max-width: 420px) {
+				padding: 0 24px;
+			}
+		}
+	}
+	&.post-portrait { /* Posts with a portrait orientation main image such as photo posts */
+		display: grid;
+		grid-template-columns: 32px minmax(320px, 720px) 32px minmax(320px, 1fr) 32px;
+		grid-template-areas:
+		"cover cover . caption .";
+		@media(max-width: 840px) {
+			grid-template-columns: 24px minmax(320px, 720px) 24px minmax(240px, 1fr) 24px;
+			grid-template-areas:
+			". cover . caption .";
+		}
+		@media(max-width: 640px) {
+			grid-template-columns: 24px 1fr 24px;
+			grid-template-areas:
+			". cover ."
+			". caption .";
+		}
+		& .cover-img {
+			align-self: end;
+		}
+		& .post-body {
+			grid-area: caption;
+		  align-self: end;
+		}
+	}
+}
+
+/*----------------------------
+	# Main navigation
 ----------------------------*/
 nav {
 	width: auto;
@@ -265,6 +375,9 @@ nav {
 	grid-auto-rows: 80px;
 	grid-auto-flow: row;
 	grid-gap: 16px;
+	@media(max-width: 840px) {
+		margin-left: 24px;
+	}
 	@media(max-width: 420px) {
 		grid-template-columns: repeat(auto-fill, minmax(72px, 72px));
 		grid-auto-rows: 72px;
@@ -273,8 +386,7 @@ nav {
 	& a {
 		text-decoration: none;
 		color: var(--heading-color);
-		font-size: var(--text-s);
-		text-transform: uppercase;
+		font-size: var(--text);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -309,7 +421,20 @@ nav {
 		}
 	}
 }
-
+footer {
+	min-height: 100px;
+	background-color: var(--brand-color);
+	padding: 32px;
+	margin-top: var(--xl);
+	color: var(--text-color);
+	display: flex;
+	align-items: flex-end;
+	& > * {
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+}
 /*----------------------------
 	# Miscellaneous debris
 ----------------------------*/
