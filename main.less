@@ -34,7 +34,7 @@
 	# Defaults and resets
 ----------------------------*/
 
-html, body {
+body {
 	font-family: 'libre_franklin';
 	font-size: 16px;
 	-ms-text-size-adjust:100%;
@@ -47,7 +47,7 @@ html, body {
 	line-height: 1.5;
 	background-color: #f9f8f3;
 	padding: 0;
-	margin: 0;
+	margin: auto;
 	@media(max-width: 420px) {
 		font-size: 15px;
 	}
@@ -254,6 +254,42 @@ ul, ol {
 nav, main {
 	max-width: 1280px;
 	margin: auto;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+nav, main, footer {
+	@media(max-width: 840px) {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
+main.home,
+main.about { /* homepage layout */
+	& article {
+		display: grid;
+		grid-template-columns: minmax(300px, 300px) minmax(476px, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+		"col-1 col-2";
+		margin-top: var(--xl);
+		@media(max-width: 840px) {
+			display: block;
+		}
+		& header {
+			grid-area: col-1;
+			& :first-child {
+				margin-top: 1rem;
+				@media(max-width: 840px) {
+					margin-top: initial;
+				}
+			}
+		}
+		& section {
+			grid-area: col-2;
+		}
+	}
+}
+main.journal {
 }
 article {
 	margin: auto;
@@ -273,6 +309,9 @@ article {
 			background-color: var(--light-gray-color);
 			line-height: 0;
 		}
+		& .cover-img {
+			grid-area: cover;
+		}
 		& .post-body {
 			grid-area: body;
 		}
@@ -282,18 +321,15 @@ article {
 	}
 	&.post { /* Full size journal post with a big cover image, title, meta, and body content */
 		display: grid;
-		grid-template-columns: 32px minmax(300px, 1fr) minmax(476px, 1fr) 32px;
+		grid-template-columns: minmax(300px, 1fr) minmax(476px, 1fr);
 		grid-template-rows: auto;
+		grid-column-gap: var(--m);
 		grid-template-areas:
-		"cover cover cover cover"
-		". header body ."
-		". . body .";
+		"cover 	cover"
+		"header body"
+		".  		body";
 		@media(max-width: 840px) {
-			grid-template-columns: 24px 1fr 24px;
-			grid-template-areas:
-			". cover ."
-			". header ."
-			". body .";
+			display: block;
 		}
 		& .cover-img {
 			grid-area: cover;
@@ -306,9 +342,10 @@ article {
 			position: sticky;
 			top: 1em;
 			margin-top: 2em;
-			@media(max-width: 840px)
-		 {
+			margin-left: 32px;
+			@media(max-width: 840px) {
 			 position: initial;
+			 margin-left: 0;
 		 }
 			& :first-child {
 				margin-top: 1.2rem;
@@ -316,55 +353,74 @@ article {
 		}
 		& .post-body {
 			margin-top: 2em;
+			margin-right: 32px;
+			@media(max-width: 840px) {
+				margin-right: 0;
+			}
 		}
 		& .cover-img {
 			grid-area: cover;
 		}
 	}
 	&.post-wide { /* Posts with a wide main image, like movie screenshot posts */
-		display: grid;
-		grid-template-columns: 32px 1fr 32px;
-		grid-template-areas:
-		"cover cover cover"
-		". body .";
-		@media(max-width: 840px) {
-			grid-template-columns: 24px 1fr 24px;
-			grid-template-areas:
-			". cover ."
-			". body .";
+		display: block;
 		}
 		& .post-body {
-			@media(max-width: 420px) {
-				padding: 0 24px;
+			margin: auto 32px;
+			@media(max-width: 840px) {
+				margin: auto 0;
 			}
-		}
 	}
 	&.post-portrait { /* Posts with a portrait orientation main image such as photo posts */
 		display: grid;
-		grid-template-columns: 32px minmax(320px, 720px) 32px minmax(320px, 1fr) 32px;
+		grid-template-columns: minmax(320px, 720px) 32px minmax(320px, 1fr);
 		grid-template-areas:
-		"cover cover . caption .";
+		"cover . caption";
+		align-items: end;
 		@media(max-width: 840px) {
-			grid-template-columns: 24px minmax(320px, 720px) 24px minmax(240px, 1fr) 24px;
+			grid-template-columns: minmax(320px, 720px) 24px minmax(240px, 1fr);
 			grid-template-areas:
-			". cover . caption .";
+			"cover . caption";
 		}
 		@media(max-width: 640px) {
-			grid-template-columns: 24px 1fr 24px;
-			grid-template-areas:
-			". cover ."
-			". caption .";
+			display: block;
 		}
 		& .cover-img {
 			align-self: end;
 		}
 		& .post-body {
+			margin: 0;
 			grid-area: caption;
-		  align-self: end;
+			align-self: end;
 		}
 	}
 }
-
+.portfolio {
+	& div {
+		margin-top: var(--l);
+		margin-bottom: var(--l);
+	}
+	& a {
+		text-decoration: none;
+		& img {
+			width: 100%;
+			height: auto;
+		}
+		& p {
+			margin-bottom: 0;
+		}
+	}
+}
+.two-col {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+	grid-gap: var(--m);
+}
+.tre-col {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min-content, 200px));
+	grid-gap: var(--m);
+}
 /*----------------------------
 	# Main navigation
 ----------------------------*/
@@ -375,18 +431,18 @@ nav {
 	grid-auto-rows: 80px;
 	grid-auto-flow: row;
 	grid-gap: 16px;
-	@media(max-width: 840px) {
-		margin-left: 24px;
-	}
+	padding-left: 32px;
+	font-size: var(--text);
 	@media(max-width: 420px) {
-		grid-template-columns: repeat(auto-fill, minmax(72px, 72px));
-		grid-auto-rows: 72px;
+		grid-template-columns: repeat(auto-fill, minmax(64px, 64px));
+		grid-auto-rows: 64px;
 		grid-gap: 8px;
+				font-size: var(--text-s);
 	}
 	& a {
 		text-decoration: none;
 		color: var(--heading-color);
-		font-size: var(--text);
+
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -457,4 +513,17 @@ pre {
 	padding: var(--s) var(--l);
 	border-radius: var(--xs);
 	overflow: scroll;
+}
+.sticky {
+	position: sticky;
+	top: 1em;
+	@media(max-width: 840px) {
+		position: relative;
+		top: initial;
+	}
+}
+.hidden {
+	height: 0px;
+	width: 0px;
+	visibility: hidden;
 }

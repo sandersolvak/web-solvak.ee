@@ -25,17 +25,21 @@
 
 <body>
 	<nav>
-		<a href="index.html"> / home</a>
-		<a href="./work/work.html"> / work</a>
-		<a href="./journal/journal.html"> / journal</a>
-		<a href="about.html"> / about</a>
+		<a href="index.html" class="home"><span class="hidden">Home</span>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+				<path d="M4.07 19.87c1.27 1.14 2.8 1.72 4.59 1.72 1.72 0 4.44-.82 8.17-2.46 7.09-3.01 11.83-4.51 14.22-4.51 2.26 0 4.26.85 5.99 2.54 1.73 1.69 2.72 4.42 2.97 8.17h-1.79c-.87-4.53-3.16-6.79-6.86-6.79-1.49 0-4.49.91-8.99 2.74s-7.46 2.97-8.88 3.43c-1.42.46-2.82.69-4.22.69-2.51 0-4.65-.94-6.42-2.82C1.07 20.7.12 18.07 0 14.68h1.79c.25 2.32 1.01 4.05 2.28 5.19z"></path>
+			</svg>
+		</a>		<a href="./work/work.html">Work</a>
+		<a href="./journal/journal.html">Journal</a>
+		<a href="about.html" class="active">About</a>
 	</nav>
-<main>
-	<header>
-		<h1>About me</h1>
-	</header>
+
+<main class="about">
 
 	<article>
+		<header>
+			<h1>About me</h1>
+		</header>
 		<section aria-label="bio">
 			<p>(waving hand emoji)</p>
 			<p>Hi, I'm Sander Solvak, a designer based in Tallinn, Estonia. For over 15 years I've helped clients both big and small with websites, apps, design systems, branding, books and more.</p>
@@ -46,19 +50,43 @@
 	</article>
 
 	<article>
-		<h2>Connect</h2>
-		<p>If you want to get in touch for a project, it's best to <a href="mailto:hi@solvak.ee">e-mail me.</a></p>
-		<p>I'm also on <a href="https://ee.linkedin.com/in/sandersolvak">LinkedIn</a> and <a href="https://twitter.com/sandersolvak">twitter.</a></p>
+		<header>
+			<h2>Connect</h2>
+		</header>
+		<section>
+			<p>If you want to get in touch for a project, it's best to <a href="mailto:hi@solvak.ee">e-mail me.</a> I'm also on <a href="https://ee.linkedin.com/in/sandersolvak">LinkedIn</a> and <a href="https://twitter.com/sandersolvak">twitter.</a></p>
+		</section>
 	</article>
 
 	<article>
-		<h2>Colophon</h2>
-		<p>This site is designed and built by yours truly. The headings are set in <a href="http://prospectus.losttype.com/">Prospectus</a> and the rest in <a href="https://github.com/impallari/Libre-Franklin">Libre Franklin.</a> It runs on a lovely little cms called Perch. No tracking, no snooping, no bullshit. Simple.</p>
+		<header>
+			<h2>Colophon</h2>
+		</header>
+		<section>
+			<p>This site is designed and built by yours truly. The headings are set in <a href="http://prospectus.losttype.com/">Prospectus</a> and the rest in <a href="https://github.com/impallari/Libre-Franklin">Libre Franklin.</a> It runs on a lovely little cms called Perch. No tracking, no snooping, no bullshit. Simple.</p>
+		</section>
 	</article>
 
 	<article>
-		<h2>Shout-outs</h2>
-		<p>People I've learned a lot from and think you might too. Or just cool sites. Hat tips all around, a.k.a. a <a href="https://en.wiktionary.org/wiki/blogroll">blogroll.</a></p>
+		<header>
+			<h2 class="sticky">Shout-outs</h2>
+		</header>
+		<section>
+			<p>People I've learned a lot from and think you might too. Or just cool sites. Hat tips all around, a.k.a. a <a href="https://en.wiktionary.org/wiki/blogroll">blogroll.</a></p>
+			<div class="tre-col">
+				<p><a href="#">First name</a><br>
+					<span class="post-meta">Designer</span>
+				</p>
+				<p><a href="#">First name</a><br>
+					<span class="post-meta">Designer</span>
+				</p>
+				<p><a href="#">First name</a><br>
+					<span class="post-meta">Designer</span>
+				</p>
+			</div>
+
+
+		</section>
 	</article>
 
 </main>
