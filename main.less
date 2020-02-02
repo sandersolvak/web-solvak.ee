@@ -48,8 +48,19 @@ body {
 	background-color: #f9f8f3;
 	padding: 0;
 	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-between;
+	height: 100vh;
+	& main {
+		flex: 2 0 auto;
+	}
 	@media(max-width: 420px) {
 		font-size: 15px;
+	}
+	& > * {
+		box-sizing: border-box;
 	}
 }
 
@@ -177,17 +188,14 @@ a {
 			transition: var(--fast);
 			transform: translateX(1px);
 		}
+		&::before {
+			/* colors the arrow on .link-arrow::after type of links on hover */
+			color: #ffbe12;
+			transition: var(--fast);
+			transform: translateX(-1px);
+		}
 	}
-	& .link-arrow::after {
-		/* Adds a right pointing arrow after a link,
-			good for 'Read more →' or 'See all →' type of links. */
-		content: '\2192';
-		display: inline-block;
-		margin-left: var(--s);
-		text-decoration: none;
-		font-weight: bold;
-		transition: var(--fast);
-	}
+
 	& img {
 		/* Image link like movie screenshot posts on the journal */
 		box-shadow: 0px 0px 0px var(--brand-color);
@@ -252,6 +260,7 @@ ul, ol {
 	# Grids & blocks
 ----------------------------*/
 nav, main {
+	width: 100%;
 	max-width: 1280px;
 	margin: auto;
 	padding-left: 32px;
@@ -425,9 +434,9 @@ article {
 	# Main navigation
 ----------------------------*/
 nav {
-	width: auto;
+	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(80px, 80px));
+	grid-template-columns: repeat(auto-fit, minmax(80px, 80px));
 	grid-auto-rows: 80px;
 	grid-auto-flow: row;
 	grid-gap: 16px;
@@ -478,7 +487,7 @@ nav {
 	}
 }
 footer {
-	min-height: 100px;
+	min-height: 200px;
 	background-color: var(--brand-color);
 	padding: 32px;
 	margin-top: var(--xl);
@@ -500,7 +509,15 @@ footer {
 	list-style-type: none;
 
 }
-.link-arrow::after {
+.link-left::before {
+	/* Adds a left pointing arrow before a link,
+		good for 'Back to →' type of links. */
+	content: '\2190';
+	display: inline-block;
+	margin-right: var(--s);
+	text-decoration: none;
+}
+.link-right::after {
 	/* Adds a right pointing arrow after a link,
 		good for 'Read more →' or 'See all →' type of links. */
 	content: '\2192';
