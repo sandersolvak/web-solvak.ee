@@ -163,7 +163,7 @@ p {
 		color: var(--heading-color);
 		margin-top: var(--m);
 		margin-bottom: var(--l);
-		@media(max-width: 848px) {
+		@media(max-width: 840px) {
 			margin-top: var(--l);
 		}
 	}
@@ -252,7 +252,6 @@ ul, ol {
 	color: var(--text-color);
 	& ul,
 	& ol { /* Nested lists */
-		padding-left: 24px;
 		margin-top: 0.4rem;
 		margin-bottom: 1rem;
 	}
@@ -303,8 +302,7 @@ main.about { /* homepage layout */
 		}
 	}
 }
-main.journal {
-}
+
 article {
 	margin: auto;
 	&.post,
@@ -332,12 +330,12 @@ article {
 				object-fit: contain;
 				margin: 0 auto;
 			}
-			&:hover {
-					box-shadow: 0px 4px 0px var(--brand-color);
-			}
 		}
 		& .post-body {
 			grid-area: body;
+		}
+		& a.cover-img:hover {
+				box-shadow: 0px 4px 0px var(--brand-color);
 		}
 	}
 	&:last-child {
@@ -381,9 +379,6 @@ article {
 				margin-right: 0;
 			}
 		}
-		& .cover-img {
-			grid-area: cover;
-		}
 	}
 	&.post-wide { /* Posts with a wide main image, like movie screenshot posts */
 		display: block;
@@ -418,11 +413,12 @@ article {
 		}
 	}
 }
+
 .portfolio {
 	& .projects div {
 		margin-top: var(--l);
 		margin-bottom: var(--l);
-		& .cover-img {
+		& a {
 			text-decoration: none;
 			& img {
 				width: 100%;
@@ -430,6 +426,9 @@ article {
 			}
 			& p {
 				margin-bottom: 0;
+			}
+			&:hover img {
+					box-shadow: 0px 4px 0px var(--brand-color);
 			}
 		}
 	}
@@ -453,7 +452,7 @@ nav {
 	grid-template-columns: repeat(auto-fit, minmax(80px, 80px));
 	grid-auto-rows: 80px;
 	grid-auto-flow: row;
-	grid-gap: 16px;
+	grid-gap: 8px;
 	padding-left: 32px;
 	font-size: var(--text);
 	@media(max-width: 420px) {
@@ -465,7 +464,6 @@ nav {
 	& a {
 		text-decoration: none;
 		color: var(--heading-color);
-
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -473,7 +471,6 @@ nav {
 		width: 100%;
 		&:hover {
 			background-color: var(--brand-color);
-			transform: scale(1.02);
 		}
 		&:active {
 			transform: scale(1);
@@ -557,4 +554,24 @@ pre {
 	height: 0px;
 	width: 0px;
 	visibility: hidden;
+}
+.paginator {
+	color: var(--text-color);
+		@media(max-width: 840px) {
+			display: flex;
+			justify-content:center;
+			align-items: center;
+		}
+	& a {
+		padding: 1em;
+		text-decoration-thickness: 1px;
+		&:hover {
+			text-decoration-thickness: 3px;
+			transition: var(--fast);
+		}
+	}
+	& span {
+		margin: 0 var(--m);
+		opacity: 0.4;
+	}
 }
