@@ -244,9 +244,6 @@ a {
 	}
 }
 
-/*----------------------------
-	# Lists
-----------------------------*/
 ul, ol {
 	padding-left: 32px;
 	color: var(--text-color);
@@ -348,7 +345,7 @@ article {
 	}
 	& header {
 		grid-column: ~'1 / 2';
-		display: block;
+		align-self: start;
 		margin-left: var(--l);
 		@media(max-width: 840px) {
 			position: initial;
@@ -382,6 +379,7 @@ article {
 	}
 	& .wide { /* Places the element across both columns */
 		grid-column: ~'1 / 3';
+		position: relative;
 		& img {
 			width: 100%;
 			height: auto;
@@ -428,6 +426,17 @@ article {
 			align-self: end;
 		}
 	}
+	&.project {
+		& .col-1,
+		& .col-2,
+		& .wide {
+			margin-top: var(--l);
+			margin-bottom: var(--l);
+		}
+		& header + .col-2 {
+			margin-top: 0;
+		}
+	}
 }
 .portfolio {
 	& .projects div {
@@ -447,9 +456,7 @@ article {
 			}
 		}
 	}
-
 }
-
 
 .two-col {
 	display: grid;
@@ -597,3 +604,7 @@ pre {
 		opacity: 0.4;
 	}
 }
+
+/*----------------------------
+	# Utility classes
+----------------------------*/
