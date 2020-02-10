@@ -342,6 +342,7 @@ article {
 	}
 	& a.cover:hover {
 		box-shadow: 0px 4px 0px var(--brand-color);
+		transition: all var(--slow);
 	}
 	& header {
 		grid-column: ~'1 / 2';
@@ -524,21 +525,64 @@ nav {
 }
 footer {
 	min-height: 200px;
+	font-size: var(--text-s);
 	background-color: var(--brand-color);
 	padding: 32px;
 	margin-top: var(--xl);
 	color: var(--text-color);
 	display: flex;
+	flex-direction: column;
 	align-items: flex-end;
+	justify-content: flex-end;
 	& > * {
 		width: 100%;
-		max-width: 1280px;
+		max-width: 1214px;
 		margin: 0 auto;
+	}
+	& .nav-footer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: var(--l);
+		& a {
+			padding: 0.2em;
+			margin-right: var(--m);
+			color: var(--text-color);
+			border-bottom: 1px solid var(--brand-color);
+			&:hover {
+				color: var(--heading-color);
+				border-bottom: 1px solid;
+			}
+			&.home {
+				border-bottom: none;
+			}
+		}
+		& .home svg{
+			width: 1rem;
+			fill: currentColor;
+		}
+
+	}
+	& .sun {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		transform-origin: 6px 9px;
+	}
+	&:hover .sun{
+		color: var(--red-color);
+		animation: spin 3s infinite linear;
 	}
 }
 /*----------------------------
 	# Miscellaneous debris
 ----------------------------*/
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
 .no-bullet {
 	/* Removes bullets from lists and resets padding */
 	padding-left: 0;
@@ -579,6 +623,7 @@ pre {
 	height: 0px;
 	width: 0px;
 	visibility: hidden;
+	display: inline-block;
 }
 .paginator {
 	color: var(--text-color);
