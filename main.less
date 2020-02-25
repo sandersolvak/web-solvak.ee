@@ -509,8 +509,8 @@ nav {
 		}
 		&.home {
 			& svg {
-				fill: var(--brand-color);
-				width: 40px;
+				fill: var(--heading-color);
+				width: 32px;
 				transition: var(--slow);
 			}
 			&:hover,
@@ -569,11 +569,12 @@ footer {
 		display: inline-block;
 		width: 16px;
 		height: 16px;
-		transform-origin: 6px 9px;
+		transform-origin: 7px 9px;
 	}
 	&:hover .sun{
 		color: var(--red-color);
 		animation: spin 3s infinite linear;
+				transform-origin: 7px 9px;
 	}
 }
 /*----------------------------
@@ -649,7 +650,6 @@ pre {
 		opacity: 0.4;
 	}
 }
-
 /*----------------------------
 	# Utility classes
 ----------------------------*/
