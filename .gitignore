@@ -1,3 +1,6 @@
 # Untrack fonts folder to avoid possible license breaches when making the repo public
 
 assets/fonts/
+
+# do not track Perch
+perch/

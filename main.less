@@ -478,14 +478,14 @@ nav {
 	grid-template-columns: repeat(auto-fit, minmax(80px, 80px));
 	grid-auto-rows: 80px;
 	grid-auto-flow: row;
-	grid-gap: 8px;
+	grid-gap: 0px;
 	padding-left: 32px;
 	font-size: var(--text);
 	@media(max-width: 420px) {
 		grid-template-columns: repeat(auto-fill, minmax(64px, 64px));
 		grid-auto-rows: 64px;
 		grid-gap: 8px;
-				font-size: var(--text-s);
+		font-size: var(--text-s);
 	}
 	& a {
 		text-decoration: none;
@@ -506,6 +506,10 @@ nav {
 			text-decoration-thickness: 2px;
 			text-decoration-offset: 2px;
 			text-decoration-color: var(--brand-color);
+			transition: var(--slow);
+			&:hover {
+				text-decoration-thickness: 0px;
+			}
 		}
 		&.home {
 			& svg {
@@ -515,9 +519,10 @@ nav {
 			}
 			&:hover,
 			&.active {
-				background: var(--brand-color);
 				& svg {
-					fill: white;
+
+					/*-webkit-filter:drop-shadow(0px 2px 0px #f9f8f3) drop-shadow(0px 2px 0px var(--brand-color));
+					filter:drop-shadow(0px 2px 0px #f9f8f3) drop-shadow( 0px 2px 0px var(--brand-color));*/
 				}
 			}
 		}
@@ -588,11 +593,10 @@ footer {
 	/* Removes bullets from lists and resets padding */
 	padding-left: 0;
 	list-style-type: none;
-
 }
 .link-left::before {
 	/* Adds a left pointing arrow before a link,
-		good for 'Back to →' type of links. */
+		good for '← Back to' type of links. */
 	content: '\2190';
 	display: inline-block;
 	margin-right: var(--s);
@@ -612,20 +616,7 @@ pre {
 	border-radius: var(--xs);
 	overflow: scroll;
 }
-.sticky {
-	position: sticky;
-	top: 1em;
-	@media(max-width: 840px) {
-		position: relative;
-		top: initial;
-	}
-}
-.hidden {
-	height: 0px;
-	width: 0px;
-	visibility: hidden;
-	display: inline-block;
-}
+
 .paginator {
 	color: var(--text-color);
 	line-height: 1;
@@ -653,3 +644,17 @@ pre {
 /*----------------------------
 	# Utility classes
 ----------------------------*/
+.sticky {
+	position: sticky;
+	top: 1em;
+	@media(max-width: 840px) {
+		position: relative;
+		top: initial;
+	}
+}
+.hidden {
+	height: 0px;
+	width: 0px;
+	visibility: hidden;
+	display: inline-block;
+}
