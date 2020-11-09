@@ -211,6 +211,9 @@ a {
 		transition: var(--slow);
 	}
 }
+figure video {
+	width: 100%;
+}
 
 .post-meta, time {  /* Meta information on blog posts like dates and tags */
 	font-size: 0.88rem;
@@ -319,7 +322,8 @@ article {
 		display: block;
 	}
 	& figure,
-	& figure img {
+	& figure img,
+	& figure video {
 		max-width: 1280px;
 	}
 	& .cover {
@@ -657,4 +661,9 @@ pre {
 	width: 0px;
 	visibility: hidden;
 	display: inline-block;
+}
+
+
+video {
+	max-width: 1216px;
 }
