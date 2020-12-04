@@ -443,7 +443,7 @@ article {
 		}
 	}
 }
-.portfolio {
+.portfolio, .photo {
 	& .projects div {
 		margin-top: var(--l);
 		margin-bottom: var(--l);
@@ -473,10 +473,73 @@ article {
 	grid-template-columns: repeat(auto-fit, minmax(min-content, 200px));
 	grid-gap: var(--m);
 }
+
+/*----------------------------
+	# Photo pages
+----------------------------*/
+.photo-single {
+	height: 100%;
+	width: 100%;
+	max-width: unset;
+	display: grid;
+	grid-template-columns: 1fr 80px;
+	grid-template-rows: 1fr;
+	grid-gap: 0;
+	padding: 0;
+	align-items: start;
+	& .controls {
+		grid-row-start: 1;
+		grid-row-end: 2;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		padding: 0;
+		& a {
+			background-color: var(--light-gray-color);
+		}
+	}
+	& div.image {
+		grid-row-start: 1;
+		grid-row-end: 2;
+		grid-column-start: 1;
+		grid-column-end:3;
+		align-self: center;
+		height: 98vh;
+		width: 96vw;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		justify-self: center;
+		& img {
+			max-height: 100%;
+		}
+	}
+}
+.thumbs {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: var(--l);
+	margin-bottom: var(--l);
+	& a {
+		transition: var(--fast);
+		height: 80px;
+		margin-right: 1px;
+		margin-bottom: 1px;
+		& img {
+			height: 100%;
+			width: auto;
+		}
+		&:hover {
+			& img {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
 /*----------------------------
 	# Main navigation
 ----------------------------*/
-nav {
+nav, .controls {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(80px, 80px));
@@ -555,7 +618,7 @@ footer {
 		justify-content: flex-start;
 		flex-wrap: wrap;
 		margin-bottom: var(--l);
-		& a {
+		& > * {
 			padding: 0.2em;
 			margin-right: var(--m);
 			color: var(--text-color);
@@ -574,13 +637,14 @@ footer {
 		}
 
 	}
-	& .sun {
+	& .sun:before {
+		content: '☀';
 		display: inline-block;
 		width: 16px;
 		height: 16px;
 		transform-origin: 5.97px 8.55px;
 	}
-	&:hover .sun{
+	&:hover .sun:before{
 		color: var(--red-color);
 		animation: spin 3s infinite linear;
 		transform-origin: 5.97px 8.55px;
