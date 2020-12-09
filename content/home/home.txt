@@ -1,11 +1,9 @@
 
-Title: Sander Solvak
+Title: Hello!
 
 ----
 
 Text:
-
-#Hello!
 
 My name is Sander and I’m a designer based in Tallinn, Estonia. I’ve helped clients both big and small with websites, apps, design systems, branding, installations, books and more. Currently design manager at [Funderbeam](https://www.funderbeam.com/). I like to keep things clean and simple, love [movies](https://letterboxd.com/sandersolvak/), food, [travelling](https://www.flickr.com/photos/sandersolvak/albums), bicycles and making pictures.
 
