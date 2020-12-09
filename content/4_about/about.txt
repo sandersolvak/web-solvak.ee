@@ -1,0 +1,26 @@
+
+Title: About me
+
+----
+
+Text:
+
+Hi, I'm Sander Solvak, a designer based in Tallinn, Estonia. For over 15 years I've helped clients both big and small with websites, apps, design systems, branding, books and more.
+
+I believe in keeping things clean and simple, love finding elegant solutions to problems and try leave things better than I found them.
+
+I'm currently leading design and changing fintech at [Funderbeam.](https://www.funderbeam.com) Previously, I was a design generalist at Playtech, working on everything from tradeshows and print designs of all shapes and sizes to websites and user interfaces. Time permitting, I still occasionally take on freelance projects.
+
+My time off is spent with [movies,](https://letterboxd.com/sandersolvak/) cooking, [travelling,](https://www.flickr.com/photos/sandersolvak/albums) on my bike or taking pictures.
+
+##Connect
+
+If you want to get in touch for a project, it's best to [e-mail me.](mailto:hi@solvak.ee) You can also find me on [LinkedIn](https://ee.linkedin.com/in/sandersolvak) and [twitter.](https://twitter.com/sandersolvak)
+
+##Colophon
+
+This site is designed and built by yours truly. The headings are set in [Prospectus](http://prospectus.losttype.com/) and the rest in [Libre Franklin.](https://github.com/impallari/Libre-Franklin) It runs on a lovely little cms called Kirby. No tracking, no snooping, no bullshit. Simple.
+
+##Shout-outs
+
+People I've learned a lot from and think you might too. Or just cool sites. Hat tips all around, a.k.a. a [blogroll](https://en.wiktionary.org/wiki/blogroll).

@@ -4,3 +4,6 @@ assets/fonts/
 
 # do not track Perch
 perch/
+
+# temporarily exclude Kirby
+starterkit-master/

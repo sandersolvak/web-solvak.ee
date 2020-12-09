@@ -1,7 +1,9 @@
 // out: main.css, sourcemap: false, compress: true
 
 :root {
-	/* Set global CSS custom properties */
+	/*
+	Set global CSS custom properties
+	*/
 
 	/* Spacing, base unit, t-shirt sizing (s,m,l,xl) */
 	--spacing-unit: 8px;
@@ -75,44 +77,44 @@ figure, blockquote {
 
 @font-face {
     font-family: 'prospectus';
-    src: url('./assets/fonts/prospectus-black.woff2') format('woff2'),
-         url('./assets/fonts/prospectus-black.woff') format('woff');
+    src: url('../fonts/prospectus-black.woff2') format('woff2'),
+         url('../fonts/prospectus-black.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'prospectus';
-    src: url('./assets/fonts/prospectus-black-italic.woff2') format('woff2'),
-         url('./assets/fonts/prospectus-black-italic.woff') format('woff');
+    src: url('../fonts/prospectus-black-italic.woff2') format('woff2'),
+         url('../fonts/prospectus-black-italic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'libre_franklin';
-    src: url('./assets/fonts/librefranklin-regular.woff2') format('woff2'),
-         url('./assets/fonts/librefranklin-regular.woff') format('woff');
+    src: url('../fonts/librefranklin-regular.woff2') format('woff2'),
+         url('../fonts/librefranklin-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'libre_franklin';
-    src: url('./assets/fonts/librefranklin-italic.woff2') format('woff2'),
-         url('./assets/fonts/librefranklin-italic.woff') format('woff');
+    src: url('../fonts/librefranklin-italic.woff2') format('woff2'),
+         url('../fonts/librefranklin-italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: 'libre_franklin';
-    src: url('./assets/fonts/librefranklin-semibold.woff2') format('woff2'),
-         url('./assets/fonts/librefranklin-semibold.woff') format('woff');
+    src: url('../fonts/librefranklin-semibold.woff2') format('woff2'),
+         url('../fonts/librefranklin-semibold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'libre_franklin';
-    src: url('./assets/fonts/librefranklin-semibold-italic.woff2') format('woff2'),
-         url('./assets/fonts/librefranklin-semibold-italic.woff') format('woff');
+    src: url('../fonts/librefranklin-semibold-italic.woff2') format('woff2'),
+         url('../fonts/librefranklin-semibold-italic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
@@ -213,22 +215,6 @@ a {
 }
 figure video {
 	width: 100%;
-}
-
-.post-meta, time {  /* Meta information on blog posts like dates and tags */
-	font-size: 0.88rem;
-	line-height: 1.1;
-	margin:0.8em 0;
-	color: var(--meta-color);
-	& a {
-		color: var(--meta-color);
-		text-decoration-color: var(--meta-color);
-		text-decoration-thickness: 1px;
-		&:hover {
-			color: var(--text-color);
-			text-decoration-color: var(--brand-color);
-		}
-	}
 }
 
 .pullquote {
@@ -443,8 +429,23 @@ article {
 		}
 	}
 }
-.portfolio, .photo {
-	& .projects div {
+.post-meta, time {  /* Meta information on blog posts like dates and tags */
+	font-size: 0.88rem;
+	line-height: 1.1;
+	margin:0.8em 0;
+	color: var(--meta-color);
+	& a {
+		color: var(--meta-color);
+		text-decoration-color: var(--meta-color);
+		text-decoration-thickness: 1px;
+		&:hover {
+			color: var(--text-color);
+			text-decoration-color: var(--brand-color);
+		}
+	}
+}
+.work, .photo {
+	& .cover-grid div {
 		margin-top: var(--l);
 		margin-bottom: var(--l);
 		& a {

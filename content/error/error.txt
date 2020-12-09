@@ -1,0 +1,8 @@
+
+Title: Error
+
+----
+
+Text:
+
+Sorry, this page could not be found. Take a step backwards or start again from the (link: / text: homepage).
