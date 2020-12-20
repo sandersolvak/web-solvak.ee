@@ -1,0 +1,25 @@
+Cover: (image: memgrid-001.jpg)
+
+----
+
+Title: Memgrid
+
+----
+
+Date: 2013
+
+----
+
+Tags: logo, branding
+
+----
+
+Intro:
+
+----
+
+Text:
+
+I had worked with Ahti before on TimeGT, a time-tracking and task management tool. He approached me again to create a visual identity and website for Memgrid—a tool to make building static websites quicker and easier by letting you mix and match modern web technologies without actually having to install any of them. Tools like CSS pre-processors, static site builders and template generators could all be handled via Memgrid.
+
+Memgrid would let you slice and fold your own combination of technologies hence the logo got a folding M symbol with mint-chocolate fresh colors.

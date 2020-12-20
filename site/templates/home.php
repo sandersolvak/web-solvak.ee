@@ -19,7 +19,7 @@
 			<h1><?= $page->title() ?></h1>
 		</header>
 		<section>
-			<?= $page->text() ?>
+			<?= $page->text()->kt() ?>
 		</section>
 	</article>
 

@@ -1,0 +1,28 @@
+Cover: (image: flowhow-001.jpg)
+
+----
+
+Title: Flowhow
+
+----
+
+Date: 2016
+
+----
+
+Tags: UI design, UX
+
+----
+
+Intro:
+
+----
+
+Text:
+
+FlowHow developed a tool to help companies get their agile workflow on track and keep it that way. It works by tapping into a company's Jira,  crunches the data and automagically shows how teams are doing in terms of agile best practices, suggests how to continuously improve workflows and sprinkles some gamification on top of it all.
+Designing the tool's UI posed some interesting challenges such as how does one visualise certain agile practices such as sprint cadence and velocity characteristics and the patterns that emerge.
+
+We made our best effort to practice what we preach and work as an agile team, effectively using the tool on ourselves while building it and tweaking the way we work along the way.
+
+On the technical side I learned a lot about building software iteratively, how to use Git and utilising SVG files in UIs.

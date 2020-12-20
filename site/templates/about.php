@@ -19,7 +19,7 @@
 			<h1><?= $page->title() ?></h1>
 		</header>
 
-			<?= $page->text() ?>
+			<?= $page->text()->kt() ?>
 
 			<div class="tre-col">
 				<p><a href="#">First name</a><br>

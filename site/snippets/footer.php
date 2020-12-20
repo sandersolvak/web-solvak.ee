@@ -16,7 +16,7 @@
 		<a href="#" title="Subscribe to the Notes RSS feed">RSS</a>
 
 	</div>
-	<small>&copy; <?= $site->copyright() ?> <span class="sun"></span></small>
+	<small><?= $site->copyright() ?> <span class="sun"></span></small>
 </footer>
 
 </body>
