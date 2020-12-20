@@ -33,6 +33,8 @@
 		</section>
 	</article>
 
+	<a href="<?= url('notes') ?>">View all notes</a>
+
 </main>
 
 <?php snippet('footer') ?>

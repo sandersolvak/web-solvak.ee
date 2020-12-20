@@ -1,9 +1,57 @@
 # Untrack fonts folder to avoid possible license breaches when making the repo public
 
+
+# temporarily exclude Kirby kits until deleted
+starterkit-master/
+plainkit-master/
+kirby/
+
+# Fonts
+# ---------------
 assets/fonts/
 
-# do not track Perch
-perch/
+# System files
+# ------------
 
-# temporarily exclude Kirby
-starterkit-master/
+Icon
+.DS_Store
+
+# Temporary files
+# ---------------
+
+/media/*
+!/media/index.html
+
+# Lock files
+# ---------------
+.lock
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Config files
+# ---------------
+/site/config/config.php
+
+# Cache Files
+# ---------------
+
+/site/cache/*
+!/site/cache/index.html
+
+# Accounts
+# ---------------
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Sessions
+# ---------------
+
+/site/sessions/*
+!/site/sessions/index.html
+
+# License
+# ---------------
+/site/config/.license
