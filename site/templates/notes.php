@@ -8,9 +8,13 @@ $pagination = $articles->pagination();
 ?>
 
 <main class="notes">
-
 	<?php foreach($articles as $article): ?>
 	<?php endforeach ?>
+
+	<article>
+
+		<p>notes go here</p>
+	</article>
 
 	<?php if ($pagination->hasPages()): ?>
 		<nav class="paginator">

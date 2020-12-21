@@ -1,4 +1,6 @@
-Cover: (image: playtech-001.jpg)
+Cover:
+
+(image: playtech-001.jpg)
 
 ----
 
