@@ -20,12 +20,15 @@
 			<?= $page->notes()->kt() ?>
 		</header>
 		<section>
+
 			<ul class="no-bullet">
-				<li><a href="#">The one about bike lanes.</a> <span class="post-meta">01 Jan 2020</span></li>
-				<li><a href="#">"The Last Black Man in San Francisco" </a> <span class="post-meta">16 Dec 2019</span></li>
-				<li><a href="#">Not a zero sum game.</a> <span class="post-meta">01 Dec 2019</span></li>
-				<li><a href="#" class="link-right">See all</a></li>
+				<?php $featured = page('notes')->children()->listed()->flip()->limit(3); ?>
+				<?php foreach ($featured as $project): ?>
+					<li><a href="<?= $project->url() ?>"><?= $project->title() ?></a> <span class="post-meta m-left--xs"><?= $project->date()->toDate('d. F Y H:i') ?></span></li>
+				<?php endforeach ?>
+				<li><a href="<?= url('notes') ?>" class="link-right">See all</a></li>
 			</ul>
+
 		</section>
 	</article>
 
@@ -36,10 +39,11 @@
 		</header>
 		<section>
 			<ul class="no-bullet">
-				<li><a href="#">Website for funderbeam</a></li>
-				<li><a href="#">Illustration for Katana</a></li>
-				<li><a href="#">UI design for FlowHow</a></li>
-				<li><a href="#" class="link-right">See all</a></li>
+				<?php $featured = page('work')->children()->listed()->flip()->limit(3); ?>
+				<?php foreach ($featured as $project): ?>
+					<li><a href="<?= $project->url() ?>"><?= $project->title() ?></a></li>
+				<?php endforeach ?>
+				<li><a href="<?= url('notes') ?>" class="link-right">See all</a></li>
 			</ul>
 		</section>
 	</article>
