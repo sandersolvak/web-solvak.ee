@@ -30,4 +30,4 @@ This site is designed and built by yours truly. The headings are set in [Prospec
 ----
 Blogroll:
 
-People I've learned a lot from and think you might too. Or just cool sites. Hat tips all around, a.k.a. a [blogroll](https://en.wiktionary.org/wiki/blogroll).
+People I've learned a lot from and think you might too. Or just cool sites. Hat tips all around, a.k.a. a (link: https://en.wiktionary.org/wiki/blogroll text: blogroll target: _blank).
