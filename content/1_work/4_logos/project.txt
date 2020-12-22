@@ -1,0 +1,33 @@
+Cover: (image: logos-MayaLotto.jpg)
+
+----
+
+Title: Selected logos
+
+----
+
+Date: 2014 - present
+
+----
+
+Tags: branding, logo
+
+----
+
+Intro:
+
+A selection of logos.
+
+----
+
+Text:
+
+(image: logos-MayaLotto.jpg caption: Maya Lotto lottery)
+(image: logos-AlsoKnowsIT.jpg caption: IT consultancy AlsoKnowsIT)
+(image: logos-JointVentureProjects.jpg caption: Joint Venture Projects)
+(image: logos-JuegosDeElSalvador.jpg caption: A salvadorean lottery)
+(image: logos-MagnetWorks.jpg caption: IT consultancy MagnetWorks)
+(image: logos-MichetConsulting.jpg caption: Marc Michet Consulting)
+(image: logos-Naidud.jpg caption: A utility readings reporting platform)
+(image: logos-PlaytechMentoringProgramme.jpg caption: Playtech Mentoring Programme)
+(image: logos-Visand.jpg caption: Visand, a "be your own architect" web app)

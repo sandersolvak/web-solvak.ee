@@ -16,12 +16,18 @@ Tags: web design
 
 Intro:
 
+[Statlab](http://www.statlab.ee) needed a clean and simple website outlining their many big-data related competences and services for potential clients.
+
 ----
 
 Text:
 
-[Statlab](http://www.statlab.ee) needed a clean and simple website outlining their many big-data related competences and services for potential clients. They already had a very basic brand in place, defined by a strong deep tone of red and condensed type—a simple, solid foundation to build upon.
+They already had a very basic brand in place, defined by a strong deep tone of red and condensed type—a simple, solid foundation to build upon.
 
 I created a set of animated illustrations to complement the brief paragraphs about different methods of data analysis and hint at various ways Statlab can visualise the data.
 
 All SVG illustrations that are animated are using [SMIL](https://en.wikipedia.org/wiki/Synchronized_Multimedia_Integration_Language?oldformat=true). There was no particular reason for choosing SMIL over CSS or JS to animate besides me being up to my elbows in all things SVG at the time.
+
+(image: statlab-002.jpg)
+(image: statlab-003.jpg)
+(image: statlab-004.jpg)
