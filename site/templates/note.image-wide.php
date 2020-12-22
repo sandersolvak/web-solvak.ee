@@ -7,24 +7,34 @@
 	<article class="post wide">
 		<!-- Cover image -->
 		<?php if ($page->cover()->isNotEmpty()) : ?>
-			<a href="./note-a/note-a.html" class="cover">
-				<img src="../notes/note-a/screenshot-of-La_Grande_Bellezza_-_Paulo_Sorrentino_-_2013.jpg" alt="Screenshot of the movie 'La Grande Bellezza' by Paulo Sorrentino"  />
+			<a href="<?= $page->link() ?>" class="cover">
+				<?= $page->cover()->kt() ?>
 			</a>
 		<?php endif ?>
 
 		<section class="col-1">
-			<p><a href="#"><?= $page->title()->kt() ?></a></p>
+			<p><a href="<?= $page->link() ?>"><?= $page->title()->kt() ?></a></p>
 
 			<time><?= $page->date()->toDate('d F Y') ?></time>
 
 			<?php if ($page->tags()->isNotEmpty()) : ?>
-				<p class="post-meta">Filed under:
-				<a href=""><?= $page->tags() ?></a></p>
+				<?php snippet('note.tags') ?>
 			<?php endif ?>
 		</section>
 	</article>
 
-	<a href="<?= url('notes') ?>">View all notes</a>
+	<div class="pagenav">
+		<a href="<?= url('notes') ?>">All posts</a>
+		<?php if ($page->hasPrevListed()): ?>
+			<a href="<?= $page->prevListed()->url() ?>" class="link-left">previous</a>
+			<?php else: ?>
+			<span>← previous</span>
+		<?php endif ?>
+		<?php if ($page->hasNextListed()): ?>
+			<a href="<?= $page->nextListed()->url() ?>" class="link-right">next</a>
+			<?php else: ?><span>next →</span>
+		<?php endif ?>
+	</div>
 
 </main>
 

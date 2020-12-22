@@ -3,15 +3,15 @@ Title: A text post
 
 ----
 
-Date: 2020-13-12 16:37
+Date: 2020-12-12 16:37
 
 ----
 
-Tags: movies, Kubrick
+Tags: movies, Kubrick, testing
 
 ----
 
-Cover: (image: myawesomepicture.jpg alt: This is an awesome picture)
+Cover: (image: buster.png alt: This is an awesome picture)
 
 ----
 

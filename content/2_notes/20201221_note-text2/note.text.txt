@@ -1,0 +1,34 @@
+
+Title: Another text post
+
+----
+
+Date: 2020-12-21 16:39
+
+----
+
+Tags: testing, music
+
+----
+
+Cover:
+
+----
+
+Link:
+
+----
+
+Lede:
+
+----
+
+Text:
+
+This one has no tags and no cover image plus more text.
+
+The groups would be collapsible and show how many files they hold just like the current way groups work in <a href="#">Windows 7.</a> You could rename a group any time and also change it’s color, for example you could decide that groups containing preview files are always blue and groups of client files are red, making them easy to distinguish by a glance. Deleting a group would not.
+
+The groups would be collapsible and show how many files they hold just like the current way groups work in <a href="#">Windows 7.</a> You could rename a group any time and also change it’s color, for example you could decide that groups containing preview files are always blue and groups of client files are red, making them easy to distinguish by a glance. Deleting a group would not.
+
+The groups would be collapsible and show how many files they hold just like the current way groups work in <a href="#">Windows 7.</a>

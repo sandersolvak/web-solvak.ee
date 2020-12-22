@@ -2,34 +2,43 @@
 
 <?php snippet('header') ?>
 
-<?php
-$articles   = $page->children()->listed()->paginate(10);
-$pagination = $articles->pagination();
-?>
-
 <main class="notes">
-	<?php foreach($articles as $article): ?>
+	<?php foreach ($articles as $article): ?>
+		<?php if ($article->template() == 'note.text'): ?>
+
+			<article class="post">
+				<?php snippet('note.feed.text', ['article' => $article]); ?>
+			</article>
+
+			<?php elseif ($article->template() == 'note.image-wide'): ?>
+
+			<article class="post wide">
+				<?php snippet('note.feed.image-wide', ['article' => $article]); ?>
+			</article>
+
+			<?php elseif ($article->template() == 'note.image-tall'): ?>
+
+			<article class="post tall">
+				<?php snippet('note.feed.image-tall', ['article' => $article]); ?>
+			</article>
+
+		<?php endif ?>
 	<?php endforeach ?>
 
-	<article>
-
-		<p>notes go here</p>
-	</article>
-
-	<?php if ($pagination->hasPages()): ?>
-		<nav class="paginator">
+	<?php if ($articles->pagination()->hasPages()): ?>
+		<div class="pagenav">
 			<?php if ($pagination->hasPrevPage()): ?>
 				<a href="<?= $pagination->prevPageUrl() ?>" class="link-left">newer posts</a>
 			<?php else: ?>
-				<span>newer posts</span>
+				<span class="link-left">newer posts</span>
 			<?php endif ?>
-			<span>/</span>
+
 			<?php if ($pagination->hasNextPage()): ?>
 				<a href="<?= $pagination->nextPageUrl() ?>" class="link-right">older posts</a>
 			<?php else: ?>
-				<span>older posts</span>
+				<span class="link-right">older posts</span>
 			<?php endif ?>
-		</nav>
+		</div>
 	<?php endif ?>
 
 </main>
