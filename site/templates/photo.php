@@ -4,16 +4,23 @@
 
 <main class="photo">
 
-	<article><!-- repeat for all albums -->
-		<header>
-			<h1><?= $page->title() ?></h1>
-			<time><?= $page->date() ?></time>
-		</header>
-		<div class="thumbs">
-			<!-- load all thumbnails with links -->
-			<a href="1_album/album-photo.html"><img src="1_album/venezia-001.jpg" alt="" loading=lazy></a>
-		</div>
-	</article>
+	<div <?= attr(['data-even' => $page->children()->listed()->isEven()], ' ') ?>>
+		<?php foreach ($page->children()->listed()->flip() as $album): ?>
+			<article>
+				<a href="<?= $album->url() ?>">
+					<h2><?= $album->title()->html() ?></h2>
+				</a>
+				<div class="thumbs">
+					<?php foreach($page->children()->images() as $image): ?>
+				    <a href="<?= $image->url() ?>">
+				      <?= $image->resize(null, 160) ?>
+				    </a>
+				  <?php endforeach ?>
+				</div>
+			</article>
+		<?php endforeach ?>
+
+	</div>
 
 </main>
 

@@ -518,6 +518,17 @@ article {
 /*----------------------------
 	# Photo pages
 ----------------------------*/
+.photo {
+	& article {
+		margin-top: var(--l);
+		margin-bottom: var(--l);
+		padding-bottom: var(--xl);
+		border-bottom: 1px solid var(--light-gray-color);
+		& a {
+			text-decoration: none;
+		}
+	}
+}
 .photo-single {
 	height: 100%;
 	width: 100%;
