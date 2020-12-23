@@ -23,8 +23,8 @@
 
 			<ul class="no-bullet">
 				<?php $featured = page('notes')->children()->listed()->flip()->limit(3); ?>
-				<?php foreach ($featured as $project): ?>
-					<li><a href="<?= $project->url() ?>"><?= $project->title() ?></a> <span class="post-meta m-left--xs"><?= $project->date()->toDate('d. F Y H:i') ?></span></li>
+				<?php foreach ($featured as $post): ?>
+					<li><a href="<?= $post->url() ?>"><?= $post->alt_title()->or($post->title()) ?></a> <span class="post-meta m-left--xs"><?= $post->date()->toDate('d. F Y H:i') ?></span></li>
 				<?php endforeach ?>
 				<li><a href="<?= url('notes') ?>" class="link-right">See all</a></li>
 			</ul>
