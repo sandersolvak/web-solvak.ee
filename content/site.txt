@@ -14,6 +14,6 @@ Author: Made by Sander Solvak
 
 ----
 
-Copyright: © 2016 - 2020 Sander Solvak. Be nice, OK.
+Copyright: © 2016 - 2021 Sander Solvak. Be nice, OK.
 
 ----

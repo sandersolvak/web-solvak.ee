@@ -43,7 +43,7 @@
 				<?php foreach ($featured as $project): ?>
 					<li><a href="<?= $project->url() ?>"><?= $project->title() ?></a></li>
 				<?php endforeach ?>
-				<li><a href="<?= url('notes') ?>" class="link-right">See all</a></li>
+				<li><a href="<?= url('work') ?>" class="link-right">See all</a></li>
 			</ul>
 		</section>
 	</article>

@@ -25,7 +25,7 @@ Colophon:
 
 ##Colophon
 
-This site is designed and built by yours truly. The headings are set in [Prospectus](http://prospectus.losttype.com/) and the rest in [Libre Franklin.](https://github.com/impallari/Libre-Franklin) It runs on a lovely little cms called Kirby. No tracking, no snooping, no bullshit. Simple.
+This site is designed and built by yours truly. The headings are set in [Prospectus](http://prospectus.losttype.com/) and the rest in [Libre Franklin.](https://github.com/impallari/Libre-Franklin) It runs on a lovely little CMS called Kirby. No tracking or no snooping or bullshit. Simple.
 
 ----
 Blogroll:

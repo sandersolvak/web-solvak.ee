@@ -2,7 +2,7 @@ Cover: (image: flowhow-001.jpg)
 
 ----
 
-Title: Flowhow
+Title: Flowhow UI
 
 ----
 
