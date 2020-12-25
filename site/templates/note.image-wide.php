@@ -25,6 +25,4 @@
 
 	<?php snippet('pagenav') ?>
 
-</main>
-
 <?php snippet('footer') ?>

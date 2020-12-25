@@ -13,6 +13,4 @@
 		</section>
 	</article>
 
-</main>
-
 <?php snippet('footer') ?>

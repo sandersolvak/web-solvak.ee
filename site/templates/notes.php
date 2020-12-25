@@ -40,7 +40,5 @@
 			<?php endif ?>
 		</div>
 	<?php endif ?>
-
-</main>
-
+	
 <?php snippet('footer') ?>

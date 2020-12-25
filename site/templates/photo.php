@@ -10,6 +10,7 @@
 				<a href="<?= $album->url() ?>">
 					<h2><?= $album->title()->html() ?></h2>
 				</a>
+				<p class="post-meta"><?= $album->intro()->kt() ?></p>
 				<div class="thumbs">
 					<?php foreach($page->children()->images() as $image): ?>
 				    <a href="<?= $image->url() ?>">
@@ -22,6 +23,5 @@
 
 	</div>
 
-</main>
 
 <?php snippet('footer') ?>

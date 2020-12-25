@@ -25,6 +25,4 @@
 		<?= $page->text()->kt() ?>
 	</section>
 
-</main>
-
 <?php snippet('footer') ?>
