@@ -10,9 +10,8 @@
 				<a href="<?= $album->url() ?>">
 					<h2><?= $album->title()->html() ?></h2>
 				</a>
-				<p class="post-meta"><?= $album->intro()->kt() ?></p>
 				<div class="thumbs">
-					<?php foreach($page->children()->images() as $image): ?>
+					<?php foreach($album->images() as $image): ?>
 				    <a href="<?= $image->url() ?>">
 				      <?= $image->resize(null, 160) ?>
 				    </a>
@@ -22,6 +21,5 @@
 		<?php endforeach ?>
 
 	</div>
-
 
 <?php snippet('footer') ?>
