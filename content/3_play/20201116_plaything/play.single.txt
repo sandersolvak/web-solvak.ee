@@ -1,0 +1,22 @@
+
+Title: Muster
+
+----
+
+Headline:
+
+----
+
+Date: 2020-12-12 16:33
+
+----
+
+Tags: play, whaa
+
+----
+
+Cover: (image: muster.jpg)
+
+----
+
+Text: Heres some text for a no headline post.

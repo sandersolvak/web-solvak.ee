@@ -1,0 +1,22 @@
+
+Title: Nuga
+
+----
+
+Headline: Nuga
+
+----
+
+Date: 2020-12-12 16:37
+
+----
+
+Tags: play
+
+----
+
+Cover: (image: nuga.jpg)
+
+----
+
+Text: Heres some text.

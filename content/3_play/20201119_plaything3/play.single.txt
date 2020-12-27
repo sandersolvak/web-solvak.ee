@@ -1,0 +1,22 @@
+
+Title: Nuga
+
+----
+
+Headline: Page headline
+
+----
+
+Date: 2020-12-12 16:37
+
+----
+
+Tags: play, whaa
+
+----
+
+Cover: (image: Untitled.jpg)
+
+----
+
+Text: Heres some text.

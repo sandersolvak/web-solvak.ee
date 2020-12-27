@@ -3,4 +3,4 @@ Title: Play
 
 ----
 
-Text:
+Text: --about the Play page--
