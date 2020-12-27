@@ -19,4 +19,8 @@ Cover: (image: nuga.jpg)
 
 ----
 
-Text: Heres some text.
+Intro:
+
+----
+
+Text: Image of a knife.

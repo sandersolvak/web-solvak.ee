@@ -19,4 +19,8 @@ Cover: (image: Untitled.jpg)
 
 ----
 
-Text: Heres some text.
+Intro:
+
+----
+
+Text: Heres some text. This is a collection of somewhat random bits and pieces from self-initiated projects or the results of just playing around.

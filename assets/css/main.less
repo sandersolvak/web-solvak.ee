@@ -294,10 +294,52 @@ main.about { /* homepage layout */
 		}
 	}
 }
-main.notes,
+
 main.play {
 	header {
-		margin-bottom: var(--xl);
+		margin-bottom: var(--l);
+	}
+	& div,
+	& article,
+	& article a {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	& article {
+		align-items: flex-start;
+		max-height: 300px;
+		margin: 0 var(--l) var(--l) 0;
+		& a {
+			align-items: center;
+			justify-content: center;
+			background-color: var(--light-gray-color);
+			& img, & p {
+				width: 100%;
+				flex: 0 1 auto;
+			}
+			& img {
+				max-height: 300px;
+			}
+			& p {
+				max-width: 300px;
+				margin: var(--m);
+			}
+			&:hover img {
+				box-shadow: 0px 4px 0px var(--brand-color);
+			}
+		}
+		@media(max-width: 480px) {
+			width: 100%;
+			max-height: unset;
+			& a {
+				& img {
+					width: 100%;
+					height: auto;
+					max-height: none;
+				}
+			}
+		}
 	}
 }
 

@@ -3,4 +3,4 @@ Title: Play
 
 ----
 
-Text: --about the Play page--
+Text: This is a collection of somewhat random bits and pieces from self-initiated projects or the results of just playing around.

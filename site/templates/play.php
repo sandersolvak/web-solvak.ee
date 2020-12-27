@@ -9,37 +9,20 @@
 		<?= $page->text()->kt() ?>
 	</header>
 
-	<?php foreach ($articles as $article): ?>
-
-			<article class="post">
-				<a href="<?php echo url('play', ['params' => ['article' => $article]]) ?>" class="cover">
-					<?= $article->cover()->kt() ?>
-				</a>
-
-				<header class="sticky">
-					<h2><a href="<?php echo url('play', ['params' => ['article' => $article]]) ?>"><?= $article->headline() ?></a></h2>
-
-					<time><?= $article->date()->toDate('d F Y') ?></time>
-
-					<p class="post-meta">Filed under:
-						<?php foreach ($article->tags()->split() as $tag): ?>
-							<a href="<?= url('play', ['params' => ['tag' => $tag]]) ?>">
-								<?= $tag ?>
-							</a>
-						<?php endforeach ?>
-					</p>
-
-
-				</header>
-
-				<section class="col-2">
-					<p>
-						<?= $article->text()->kt() ?>
-					</p>
-				</section>
-			</article>
-
-	<?php endforeach ?>
+	<div>
+		<?php foreach ($articles as $article): ?>
+				<article>
+					<?php foreach($article->images() as $picture): ?>
+				    <a href="<?php echo url('play', ['params' => ['article' => $article]]) ?>">
+				      <?= $picture->resize(null, 600) ?>
+				    </a>
+				  <?php endforeach ?>
+					<a href="<?php echo url('play', ['params' => ['article' => $article]]) ?>">
+						<?= $article->intro()->kt() ?>
+					</a>
+				</article>
+		<?php endforeach ?>
+	</div>
 
 	<?php if ($articles->pagination()->hasPages()): ?>
 		<div class="pagenav">

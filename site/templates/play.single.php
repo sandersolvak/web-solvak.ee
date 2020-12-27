@@ -21,9 +21,7 @@
 		</header>
 
 		<section class="col-2">
-			<p>
-				<?= $page->text()->kt() ?>
-			</p>
+				<?= $page->text()->kt()->or($page->intro()->kt()) ?>
 		</section>
 	</article>
 

@@ -19,4 +19,8 @@ Cover: (image: muster.jpg)
 
 ----
 
+Intro:
+
+----
+
 Text: Heres some text for a no headline post.
