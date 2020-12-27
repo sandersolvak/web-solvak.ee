@@ -294,6 +294,12 @@ main.about { /* homepage layout */
 		}
 	}
 }
+main.notes,
+main.play {
+	header {
+		margin-bottom: var(--xl);
+	}
+}
 
 article {
 	margin: auto;
@@ -320,6 +326,7 @@ article {
 		width: 100%;
 		max-width: 1280px;
 		height: auto;
+		min-height: 300px; // Helps prevent *some* layout flickering.
 	}
 	& .cover {
 		grid-column: ~'1 / 3';

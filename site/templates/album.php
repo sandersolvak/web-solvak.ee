@@ -11,16 +11,15 @@
 	</header>
 
 	<article>
-		<div class="thumbs">
-			<?php foreach($page->images() as $image): ?>
-				<a href="<?= $image->url() ?>">
-					<?= $image->resize(null, 160) ?>
+		<div class="thumbs"<?= attr(['data-even' => $gallery->isEven(), 'data-count' => $gallery->count()], ' ') ?>>
+			<?php foreach ($gallery as $picture): ?>
+				<a href="<?= $picture->link()->or($picture->url()) ?>">
+					<?= $picture->resize(null, 160) ?>
 				</a>
 			<?php endforeach ?>
 		</div>
 	</article>
 
 	<?php snippet('pagenav') ?>
-
 
 <?php snippet('footer') ?>
