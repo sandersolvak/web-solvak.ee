@@ -19,15 +19,14 @@
 			<h2>Blogroll</h2>
 			<p><?= $page->blogroll()->kt() ?></p>
 			<div class="tre-col">
-				<p><a href="#">First name</a><br>
-					<span class="post-meta">Designer</span>
-				</p>
-				<p><a href="#">First name</a><br>
-					<span class="post-meta">Designer</span>
-				</p>
-				<p><a href="#">First name</a><br>
-					<span class="post-meta">Designer</span>
-				</p>
+				<?php $people = $page->people()->yaml() ?>
+				<?php foreach ($page->people()->toStructure() as $people): ?>
+					<p>
+						<a href="<?= $people->website() ?>" target="_blank"><?= $people->name() ?></a><br>
+						<span class="post-meta"><?= $people->does() ?></span>
+					</p>
+				<?php endforeach ?>
+
 			</div>
 		</section>
 	</article>

@@ -30,4 +30,98 @@ This site is designed and built by yours truly. The headings are set in [Prospec
 ----
 Blogroll:
 
-People I've learned a lot from and think you might too. Or just cool sites. Hat tips all around, a.k.a. a (link: https://en.wiktionary.org/wiki/blogroll text: blogroll target: _blank).
+People I've learned a lot from and think you might too. Or just cool sites. No particular order. Hat tips all around, a.k.a. a (link: https://en.wiktionary.org/wiki/blogroll text: blogroll target: _blank).
+
+----
+
+People:
+
+Frank Chimero:
+  Name: Frank Chimero
+  Does:  designer
+	Website: https://frankchimero.com/
+
+Sara Soueidan:
+	Name: Sara Soueidan
+	Does: UI/UX developer
+	Website: https://www.sarasoueidan.com/
+
+Jeffrey Zeldman:
+	Name: Jeffrey Zeldman
+	Does: designer
+	Website: https://www.zeldman.com/
+
+Mark Boulton:
+	Name: Mark Boulton
+	Does: designer
+	Website: https://markboulton.co.uk
+
+Jen Simmons:
+	Name: Jen Simmons
+	Does: designer/developer
+	Website: https://jensimmons.com/
+
+Dan Mall:
+	Name: Dan Mall
+	Does: creative director
+	Website: http://danmall.me/
+
+Rachel Andrew:
+	Name: Rachel Andrew
+	Does: developer
+	Website: https://rachelandrew.co.uk/
+
+Lea Verou:
+	Name: Lea Verou
+	Does: developer
+	Website: https://lea.verou.me/
+
+Craig Mod:
+	Name: Craig Mod
+	Does: writer & photographer
+	Website: https://craigmod.com/
+
+Khoi Vinh:
+	Name: Khoi Vinh
+	Does: designer
+	Website: https://www.subtraction.com/
+
+Tobias van Schneider:
+	Name: Tobias van Schneider
+	Does: designer
+	Website: https://vanschneider.com/
+
+Jessica Hische:
+	Name: Jessica Hische
+	Does: artist & author
+	Website: https://www.jessicahische.is/
+
+Jonnie Hallman:
+	Name: Jonnie Hallman
+	Does: designer & developer
+	Website: https://destroytoday.com/
+
+James Jean:
+	Name: James Jean
+	Does: artist
+	Website: http://www.jamesjean.com/
+
+Jeremia Shoaf:
+	Name: Jeremia Joaf
+	Does: designer & type enthusiast
+	Website: https://www.typewolf.com/
+
+Ben Pierrat:
+	Name: Ben Pierrat
+	Does: designer
+	Website: http://www.pieratt.com/
+
+Brad Frost:
+	Name: Brad Frost
+	Does: designer & developer
+	Website: https://bradfrost.com/
+
+Matt Smith:
+	Name: Matt Smith
+	Does: designer
+	Website: http://mds.is/
