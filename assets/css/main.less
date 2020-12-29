@@ -222,17 +222,17 @@ figure video {
 	width: 100%;
 }
 
-.pullquote {
-	padding: var(--l);
+blockquote {
+	padding: var(--m) var(--l);
 	margin-top: var(--l);
 	margin-bottom: var(--l);
 	border-left: 3px solid var(--brand-color);
 	transform: translateX(-16px);
-	& blockquote {
+	& p {
 		margin-bottom: var(--s);
 		font-size: var(--text-l);
 	}
-	& figcaption {
+	& p > a {
 		font-size: var(--text-s);
 		color: var(--text-color);
 	}
@@ -308,7 +308,7 @@ main.play {
 	}
 	& article {
 		align-items: flex-start;
-		max-height: 300px;
+		max-height: 400px;
 		margin: 0 var(--l) var(--l) 0;
 		& a {
 			align-items: center;
@@ -319,7 +319,7 @@ main.play {
 				flex: 0 1 auto;
 			}
 			& img {
-				max-height: 300px;
+				max-height: 400px;
 			}
 			& p {
 				max-width: 300px;
@@ -763,6 +763,13 @@ footer {
 /*----------------------------
 	# Miscellaneous debris
 ----------------------------*/
+a[target="_blank"]::after {
+	content: '↳';
+	font-size: 80%;
+	margin-left: var(--xs);
+	display: inline-block;
+	transform: rotate(90deg);
+}
 @keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
