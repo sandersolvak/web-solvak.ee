@@ -1,22 +1,9 @@
-Cover: (image: flowhow-001.jpg)
+
+Cover: (image: flowhow-001.jpg class: cover)
 
 ----
 
 Title: Flowhow UI
-
-----
-
-Date: 2016
-
-----
-
-Tags: UI design, UX
-
-----
-
-Intro:
-
-FlowHow developed a tool to help companies get their agile workflow on track and keep it that way.
 
 ----
 
@@ -35,3 +22,16 @@ On the technical side I learned a lot about building software iteratively, how t
 (image: flowhow-004.jpg)
 (image: flowhow-005.jpg)
 (image: flowhow-006.jpg)
+(video: flowhow-navigation.mp4 poster: flowhow-navigation-poster.jpg)
+
+----
+
+Date: 2016
+
+----
+
+Tags: UI design, UX
+
+----
+
+Intro: FlowHow developed a tool to help companies get their agile workflow on track and keep it that way.

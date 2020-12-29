@@ -1,4 +1,5 @@
-Cover: (image: emilia-001.jpg)
+
+Cover: (image: emilia-001.jpg class: cover)
 
 ----
 

@@ -1,22 +1,9 @@
-Cover: (image: statlab-001.jpg)
+
+Cover: (image: statlab-001.jpg class: cover)
 
 ----
 
 Title: Website for Statlab
-
-----
-
-Date: 2017
-
-----
-
-Tags: web design
-
-----
-
-Intro:
-
-[Statlab](http://www.statlab.ee) needed a clean and simple website outlining their many big-data related competences and services for potential clients.
 
 ----
 
@@ -31,3 +18,16 @@ All SVG illustrations that are animated are using [SMIL](https://en.wikipedia.or
 (image: statlab-002.jpg)
 (image: statlab-003.jpg)
 (image: statlab-004.jpg)
+(video: statlab-web.mp4 poster: statlab-web-poster.jpg)
+
+----
+
+Date: 2017
+
+----
+
+Tags: web design
+
+----
+
+Intro: [Statlab](http://www.statlab.ee) needed a clean and simple website outlining their many big-data related competences and services for potential clients.
