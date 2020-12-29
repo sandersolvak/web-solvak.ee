@@ -1,8 +1,6 @@
 
 <?php if ($article->cover()->isNotEmpty()) : ?>
-	<a href="<?php echo url('notes', ['params' => ['article' => $article]]) ?>" class="cover">
 		<?= $article->cover()->kt() ?>
-	</a>
 <?php endif ?>
 
 <header class="sticky">

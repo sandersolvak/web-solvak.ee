@@ -1,12 +1,12 @@
 
 <?php if ($article->cover()->isNotEmpty()) : ?>
-	<a href="<?php echo url('notes', ['params' => ['article' => $article]]) ?>" class="cover">
+	<a href="<?php echo url('notes', ['params' => ['article' => $article]]) ?>">
 		<?= $article->cover()->kt() ?>
 	</a>
 <?php endif ?>
 
 <section class="col-1">
-	<p><a href="<?php echo url('notes', ['params' => ['article' => $article]]) ?>"><?= $article->title()->kt() ?></a></p>
+	<p><?= $article->title()->kt() ?></p>
 
 	<time><?= $article->date()->toDate('d F Y') ?></time>
 

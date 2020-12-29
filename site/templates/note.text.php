@@ -7,9 +7,7 @@
 	<article class="post">
 		<!-- Cover image -->
 		<?php if ($page->cover()->isNotEmpty()) : ?>
-			<a href="<?= $page->link() ?>" class="cover">
 				<?= $page->cover()->kt() ?>
-			</a>
 		<?php endif ?>
 
 		<header class="sticky">

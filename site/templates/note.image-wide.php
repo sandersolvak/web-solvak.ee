@@ -7,13 +7,13 @@
 	<article class="post wide">
 		<!-- Cover image -->
 		<?php if ($page->cover()->isNotEmpty()) : ?>
-			<a href="<?= $page->link() ?>" class="cover">
+			<a href="<?= $page->link() ?>">
 				<?= $page->cover()->kt() ?>
 			</a>
 		<?php endif ?>
 
 		<section class="col-1">
-			<p><a href="<?= $page->link() ?>"><?= $page->title()->kt() ?></a></p>
+			<p><?= $page->title()->kt() ?></p>
 
 			<time><?= $page->date()->toDate('d F Y') ?></time>
 
