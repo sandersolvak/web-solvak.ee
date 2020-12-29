@@ -1,0 +1,52 @@
+
+Title: A method for grouping files without folders.
+
+----
+
+Date: 2013-02-02 23:41
+
+----
+
+Tags: UI, UX, design
+
+----
+
+Cover:
+
+----
+
+Link:
+
+----
+
+Lede:
+
+Folders are hard. Organising information into deep hierarchies with a structure that makes sense and navigating it later takes mental energy.
+
+----
+
+Text:
+
+The mental burden of it might be small and unnoticable, much like the simple fact of having gears on your bike reserves some of the cognitive resources of your brain to (link: https://www.sheldonbrown.com/singlespeed.html text: constantly think about them target: _blank). You may not notice it and if someone tried to tell you it’s so, you might even disagree. But these things add up, and you really should use your brain for more important stuff.
+
+Folders are also hard in the sense of being unconditional. You’re taking some stuff, putting it into a drawer and closing it. It’s  hiding things from view, making you remember where, in which drawer that thing you’re looking for is.
+
+I’m not entirely against folders - big complex projects need this level of organisation. But at times I find myself wishing for a softer way of organising files. Continuing  with the drawer metaphor, I’d like a way to just group items on my desk, so they’re always visible, but still organised to some extent. What I’m wishing for is something like (link: https://www.stardock.com/products/fences/ text: Fences target: _blank), but not limited to the desktop. Windows 7 allows grouping by a myriad of criteria, but I can’t define my own groups.
+
+Working on a design project I might have multiple iterations of the design as Photoshop or Illustrator files, multiple preview jpeg’s, reference files, stray ideas and wild guesses plus specs from the client and, last but not least, the finished work. I might stuff all these into respective folders and that would give me a nice clean desk, but I would  also lose the one glance overview. Out of sight often means out of mind.
+
+##Here’s how I imagine it could work.
+
+Let’s start off with the aforementioned imaginary project. It’s a folder with other folders and miscellaneous files in it.
+
+(image: soft-folders-01.png)
+
+Instead of stuffing the loose files into respective folders (previews, feedback, client etc.) one would select the files to group by either drawing a box around them or ctrl clicking on the files. One could also right-click anywhere and create a new group from a context menu.
+
+(image: soft-folders-02.png)
+
+The groups would be collapsible and show how many files they hold just like the current way groups work in Windows 7. You could rename a group any time and also change it’s color, for example you could decide that groups containing preview files are always blue and groups of client files are red, making them easy to distinguish by a glance. Deleting a group would not delete the files in that group. You could also have empty groups for visual clues of the projects structure before all files get there.
+
+And that’s it, a more lightweight way of organising files.
+
+By the way, I recommend reading (link: https://ia.net/topics/mountain-lions-new-file-system text: Oliver Reichensteins blog post target: _blank) about getting rid of deep folder hierarchies in Apple’s Mountain Lion OS.

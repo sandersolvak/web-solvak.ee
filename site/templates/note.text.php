@@ -11,7 +11,9 @@
 		<?php endif ?>
 
 		<header class="sticky">
-			<h2 class="h1"><a href="<?= $page->link() ?>"><?= $page->title() ?></a></h2>
+			<?php if ($article->title()->isNotEmpty()) : ?>
+				<h2 class="h1"><a href="<?= $page->link() ?>"><?= $page->title() ?></a></h2>
+			<?php endif ?>
 
 			<time><?= $page->date()->toDate('d F Y') ?></time>
 

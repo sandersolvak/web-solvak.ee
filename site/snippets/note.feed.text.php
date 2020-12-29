@@ -4,8 +4,9 @@
 <?php endif ?>
 
 <header class="sticky">
-	<h2 class="h1"><a href="<?php echo url('notes', ['params' => ['article' => $article]]) ?>"><?= $article->title() ?></a></h2>
-
+	<?php if ($article->title()->isNotEmpty()) : ?>
+		<h2 class="h1"><a href="<?php echo url('notes', ['params' => ['article' => $article]]) ?>"><?= $article->title() ?></a></h2>
+	<?php endif ?>
 	<time><?= $article->date()->toDate('d. F Y H:i') ?></time>
 
 <?php if ($article->tags()->isNotEmpty()) : ?>
@@ -23,7 +24,7 @@
 
 <section class="col-2">
 	<p class="lede">
-		<?= $article->lede()->kt() ?>
+		<?= $article->lede() ?>
 	</p>
 	<p>
 		<?= $article->text()->kt() ?>

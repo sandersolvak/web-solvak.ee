@@ -428,19 +428,20 @@ article {
 			}
 		}
 	}
-	&.wide,
-	&.wide > * { /* Places the element across both columns */
+	&.wide { /* Places the element across both columns */
+		& > * {
 		grid-column: ~'1 / 3';
 		position: relative;
 		& figure {
-
+			margin-bottom: var(--m);
+			overflow: hidden;
 			& img {
-
 			}
 			& figcaption {
 				margin-top: var(--m);
 				margin-left: var(--m);
 			}
+		}
 		}
 	}
 	& img.wide {
@@ -478,7 +479,6 @@ article {
 				img {
 					width: 100%;
 					max-width: 1280px;
-					height: auto;
 					object-fit: contain;
 				}
 			}

@@ -1,0 +1,29 @@
+Title: Your app makes me fat.
+
+----
+
+Date: 2013-08-01 11:43
+
+----
+
+Tags: design, psychology
+
+----
+
+Cover:
+
+----
+
+Link:
+
+----
+
+Lede:
+
+----
+
+Text:
+
+Great (link: http://seriouspony.com/blog/2013/7/24/your-app-makes-me-fat text: article by Kathy Sierra target: _blank) on how limited our cognitive resources are:
+
+>Spend hours at work on a tricky design problem? You’re more likely to stop at Burger King on the drive home. Hold back from saying what you really think during one of those long-ass, painful meetings? You’ll struggle with the code you write later that day. Since both willpower/self-control and cognitive tasks drain the same tank, deplete it over here, pay the price over there. One pool. One pool of scarce, precious, easily-depleted resources. If you spend the day exercising self-control (angry customers, clueless co-workers), by the time you get home your cog resource tank is flashing E.

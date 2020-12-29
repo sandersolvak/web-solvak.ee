@@ -6,7 +6,7 @@
 <?php endif ?>
 
 <section class="post-body">
-	<p><a href="<?php echo url('notes', ['params' => ['article' => $article]]) ?>"><?= $article->title()->kt() ?></a></p>
+	<p><?= $article->title()->kt() ?></p>
 
 	<time><?= $article->date()->toDate('d F Y') ?></time>
 
