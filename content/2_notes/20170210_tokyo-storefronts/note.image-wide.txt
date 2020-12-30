@@ -3,7 +3,11 @@ Cover: (image: tokyo-storefronts-Mateusz-Urbanowicz.jpg class: cover)
 
 ----
 
-Title:
+Title: Tokyo storefront illustrations by Mateusz Urbanowicz.
+
+----
+
+Text:
 
 Super nice Tokyo storefront illustrations by (link: https://mateuszurbanowicz.com/works/misegamae/ text: Mateusz Urbanowicz).
 

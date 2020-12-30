@@ -1,5 +1,5 @@
 
-Cover: (image: flowhow-001.jpg class: cover)
+Cover: (image: flowhow-001.jpg)
 
 ----
 

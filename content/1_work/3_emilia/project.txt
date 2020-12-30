@@ -1,5 +1,5 @@
 
-Cover: (image: emilia-001.jpg class: cover)
+Cover: (image: emilia-001.jpg)
 
 ----
 

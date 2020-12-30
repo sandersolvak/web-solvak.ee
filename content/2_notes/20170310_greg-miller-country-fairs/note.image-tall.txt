@@ -3,7 +3,11 @@ Cover: (image: greg-miller.jpg)
 
 ----
 
-Title:
+Title: Greg Miller photographs Country Fairs.
+
+----
+
+Text:
 
 (link: https://slate.com/culture/2013/08/greg-miller-captures-relationships-at-county-fairs-across-america-photos.html text: Greg Miller) photographs Country Fairs.
 

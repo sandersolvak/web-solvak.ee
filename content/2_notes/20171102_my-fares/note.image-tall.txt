@@ -3,13 +3,13 @@ Cover: (image: my-fares.jpg)
 
 ----
 
-Title:
-
-(link: http://nymag.com/daily/intelligencer/2017/10/joseph-rodriguez-cab-driver-photo-essay.html text: “My Fares”) — what NYC cab driver Joseph Rodriguez saw through his windshield in the 70's & 80's.
+Title: “My Fares” — what NYC cab driver Joseph Rodriguez saw through his windshield in the 70's & 80's.
 
 ----
 
-Alt_title: “My Fares” — what NYC cab driver Joseph Rodriguez saw through his windshield in the 70's & 80's.
+Text:
+
+(link: http://nymag.com/daily/intelligencer/2017/10/joseph-rodriguez-cab-driver-photo-essay.html text: “My Fares”) — what NYC cab driver Joseph Rodriguez saw through his windshield in the 70's & 80's.
 
 ----
 

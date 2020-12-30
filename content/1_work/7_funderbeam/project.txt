@@ -1,5 +1,5 @@
 
-Cover: (image: funderbeam-001.jpg class: cover)
+Cover: (image: funderbeam-001.jpgs)
 
 ----
 
