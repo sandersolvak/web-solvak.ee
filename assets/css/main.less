@@ -211,12 +211,12 @@ a {
 			transform: translateX(-1px);
 		}
 	}
-
-	& img {
-		/* Image link like movie screenshot posts on the journal */
-		box-shadow: 0px 0px 0px var(--brand-color);
-		transition: var(--slow);
-	}
+}
+a.cover:hover,
+a .cover:hover,
+a:hover img {
+		box-shadow: 0px 4px 0px var(--brand-color);
+		transition: all var(--slow);
 }
 figure video {
 	width: 100%;
@@ -268,6 +268,7 @@ nav, main, footer {
 		padding-right: 24px;
 	}
 }
+
 main.home,
 main.about { /* homepage layout */
 	& article {
@@ -294,11 +295,15 @@ main.about { /* homepage layout */
 		}
 	}
 }
-
-main.play {
-	header {
-		margin-bottom: var(--l);
+main.notes,
+main.play,
+main.work {
+	& header {
+		margin-bottom: var(--xl);
+		border-bottom: 1px solid var(--light-gray-color);
 	}
+}
+main.play {
 	& div,
 	& article,
 	& article a {
@@ -324,9 +329,6 @@ main.play {
 			& p {
 				max-width: 300px;
 				margin: var(--m);
-			}
-			&:hover img {
-				box-shadow: 0px 4px 0px var(--brand-color);
 			}
 		}
 		@media(max-width: 480px) {
@@ -376,9 +378,6 @@ article {
 	& figure.cover {
 		grid-column: ~'1 / 3';
 		grid-row: ~'1 / 2';
-		width: 100%;
-		max-width: 1280px;
-		height: auto;
 		max-height: 520px;
 		margin-bottom: var(--m);
 		display: flex;
@@ -393,11 +392,7 @@ article {
 			max-width: 100%;
 		}
 	}
-	& a.cover:hover,
-	& a .cover:hover {
-		box-shadow: 0px 4px 0px var(--brand-color);
-		transition: all var(--slow);
-	}
+
 	& header {
 		grid-column: ~'1 / 2';
 		align-self: start;
@@ -481,7 +476,7 @@ article {
 				img {
 					width: 100%;
 					max-width: 1280px;
-					object-fit: contain;
+					object-fit: cover;
 				}
 			}
 		}
@@ -699,14 +694,6 @@ nav, .controls {
 				width: 32px;
 				transition: var(--slow);
 			}
-			&:hover,
-			&.active {
-				& svg {
-
-					/*-webkit-filter:drop-shadow(0px 2px 0px #f9f8f3) drop-shadow(0px 2px 0px var(--brand-color));
-					filter:drop-shadow(0px 2px 0px #f9f8f3) drop-shadow( 0px 2px 0px var(--brand-color));*/
-				}
-			}
 		}
 	}
 }
@@ -778,6 +765,7 @@ footer {
 	# Miscellaneous debris
 ----------------------------*/
 a[target="_blank"]::after {
+	/* displays an arrow icon after links that open a new tab */
 	content: '↳';
 	font-size: 80%;
 	margin-left: var(--xs);
