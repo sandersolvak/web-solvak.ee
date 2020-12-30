@@ -6,7 +6,7 @@
 <?php endif ?>
 
 <section class="post-body">
-	<p><?= $article->title()->kt() ?></p>
+	<?= $article->text()->kt() ?>
 
 	<time><?= $article->date()->toDate('d F Y') ?></time>
 

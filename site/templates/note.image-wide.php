@@ -13,7 +13,7 @@
 		<?php endif ?>
 
 		<section>
-			<?= $page->title()->kt() ?>
+			<?= $page->text()->kt() ?>
 
 			<time><?= $page->date()->toDate('d F Y') ?></time>
 

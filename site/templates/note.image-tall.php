@@ -12,7 +12,7 @@
 		<?php endif ?>
 
 		<section class="post-body">
-			<p><?= $page->title()->kt() ?></p>
+			<?= $page->text()->kt() ?>
 
 			<time><?= $page->date()->toDate('d F Y') ?></time>
 

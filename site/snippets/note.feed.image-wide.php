@@ -6,7 +6,7 @@
 <?php endif ?>
 
 <section>
-	<?= $article->title()->kt() ?>
+	<?= $article->text()->kt() ?>
 
 	<time><?= $article->date()->toDate('d F Y') ?></time>
 
