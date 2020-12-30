@@ -22,7 +22,7 @@
 				<?php $people = $page->people()->yaml() ?>
 				<?php foreach ($page->people()->toStructure() as $people): ?>
 					<p>
-						<a href="<?= $people->website() ?>" target="_blank"><?= $people->name() ?></a><br>
+						<a href="<?= $people->website() ?>"><?= $people->name() ?></a><br>
 						<span class="post-meta"><?= $people->does() ?></span>
 					</p>
 				<?php endforeach ?>

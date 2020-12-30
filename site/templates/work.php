@@ -6,6 +6,7 @@
 
 	<header>
 		<h1><?= $page->title() ?></h1>
+		<?= $page->text()->kt() ?>
 	</header>
 
 	<section class="cover-grid two-col" <?= attr(['data-even' => $page->children()->listed()->isEven()], ' ') ?>>
@@ -22,7 +23,7 @@
 	</section>
 
 	<section>
-		<?= $page->text()->kt() ?>
+		<?= $page->outro()->kt() ?>
 	</section>
 
 <?php snippet('footer') ?>

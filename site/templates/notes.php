@@ -3,6 +3,13 @@
 <?php snippet('header') ?>
 
 <main class="notes">
+
+	<header>
+		<h1><?= $page->title() ?></h1>
+		<?= $page->text()->kt() ?>
+	</header>
+
+<section>
 	<?php foreach ($articles as $article): ?>
 		<?php if ($article->template() == 'note.text'): ?>
 
@@ -24,7 +31,7 @@
 
 		<?php endif ?>
 	<?php endforeach ?>
-
+</section>
 	<?php if ($articles->pagination()->hasPages()): ?>
 		<div class="pagenav">
 			<?php if ($pagination->hasPrevPage()): ?>
@@ -40,5 +47,5 @@
 			<?php endif ?>
 		</div>
 	<?php endif ?>
-	
+
 <?php snippet('footer') ?>
