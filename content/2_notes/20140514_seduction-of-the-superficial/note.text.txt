@@ -24,5 +24,5 @@ Lede:
 
 Text:
 
-(link: https://www.peterme.com/2014/05/06/1416/ text: Peter Merholz target: _blank) writing about how the conversation around (digital) design has increasingly become about the superficial, often neglecting the deeper (link: http://www.jjg.net/elements/pdf/elements_simpleplanes.pdf text: underlying layers target: _blank) that make up a product:
+(link: https://www.peterme.com/2014/05/06/1416/ text: Peter Merholz) writing about how the conversation around (digital) design has increasingly become about the superficial, often neglecting the deeper (link: http://www.jjg.net/elements/pdf/elements_simpleplanes.pdf text: underlying layers) that make up a product:
 >It  plays into the still-prevailing attitude among business and technical types that designers don’t grok the deeper concerns in these complicated  systems, and are best to bring in when it’s time to make something look good. Still, we must be vigilant in maintaining similar attention to those deeper layers, precisely because their abstraction makes them more challenging to discuss.

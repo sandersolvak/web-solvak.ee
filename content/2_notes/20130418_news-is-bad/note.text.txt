@@ -25,7 +25,7 @@ Lede:
 Text:
 
 
-The Guardian, a newspaper, has bravely published an article on how (link: https://www.theguardian.com/media/2013/apr/12/news-is-bad-rolf-dobelli text: news is actually bad for us target: _blank). Not investigative journalism, but the fast, sensationalist media  bombarding us with “bite-sized” bullets of news that’s designed to interrupt and mislead and in the end leave us desensitized and in a chronic state of stress.
+The Guardian, a newspaper, has bravely published an article on how (link: https://www.theguardian.com/media/2013/apr/12/news-is-bad-rolf-dobelli text: news is actually bad for us). Not investigative journalism, but the fast, sensationalist media  bombarding us with “bite-sized” bullets of news that’s designed to interrupt and mislead and in the end leave us desensitized and in a chronic state of stress.
 
 From the article:
 >News misleads. Take the following event (borrowed from Nassim Taleb): A car drives over a bridge, and the bridge collapses. What does the news media focus on? The car. The person in the car. Where he came from. Where he planned to go. How he experienced the crash (if he survived). But that is all irrelevant. What’s relevant? The structural stability of the bridge. That’s the underlying risk that has been lurking, and could lurk in other bridges. But the car is flashy, it’s dramatic, it’s a person (non-abstract), and it’s news that’s cheap to produce. News leads us to  walk around with the completely wrong risk map in our heads.

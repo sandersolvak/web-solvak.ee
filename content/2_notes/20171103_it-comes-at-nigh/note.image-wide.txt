@@ -5,7 +5,7 @@ Cover: (image: It-Comes-At-Night.png class: cover)
 
 Title:
 
-(link: https://letterboxd.com/film/it-comes-at-night/ text: It Comes At Night target: _blank) (Trey Edward Shults, 2017)
+(link: https://letterboxd.com/film/it-comes-at-night/ text: It Comes At Night) (Trey Edward Shults, 2017)
 
 ----
 

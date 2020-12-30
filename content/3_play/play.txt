@@ -3,4 +3,4 @@ Title: Play
 
 ----
 
-Text: This is a collection of somewhat random bits and pieces from self-initiated projects or the results of just playing around.
+Text: A collection of somewhat random scraps and bits and pieces from self-initiated projects or the results of just playing around.

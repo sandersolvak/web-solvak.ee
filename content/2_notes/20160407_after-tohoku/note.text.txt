@@ -25,4 +25,4 @@ Lede:
 
 Text:
 
-For (link: https://www.fukushima-nogozone.com/revenir-sur-nos-pas text: Retrace Our Steps target: _blank) French photographers Carlos Ayesta and Guillaume Bressio took residents of Namie, now a ghost town like many others in the region, back to their old settings as if the 2011 Tohoku earthquake never happened.
+For (link: https://www.fukushima-nogozone.com/revenir-sur-nos-pas text: Retrace Our Steps) French photographers Carlos Ayesta and Guillaume Bressio took residents of Namie, now a ghost town like many others in the region, back to their old settings as if the 2011 Tohoku earthquake never happened.

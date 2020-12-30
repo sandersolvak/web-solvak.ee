@@ -5,7 +5,7 @@ Cover: (image: 800-club.jpg)
 
 Title:
 
-The (link: https://www.nytimes.com/interactive/2016/06/05/magazine/new-york-life.html?_r=3# text: New York Times special target: _blank) about the supertall buildings of NYC, the people who live in them, the people who build them and what happens in, on, and around them. Oh, and some spectacular views.
+The (link: https://www.nytimes.com/interactive/2016/06/05/magazine/new-york-life.html?_r=3# text: New York Times special) about the supertall buildings of NYC, the people who live in them, the people who build them and what happens in, on, and around them. Oh, and some spectacular views.
 
 ----
 

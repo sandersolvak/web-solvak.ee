@@ -3,8 +3,12 @@ Title: Work
 
 ----
 
-Text:
+Text: A selection of projects I have worked on.
+
+----
+
+Outro:
 
 ##Connect
 
-If you liked what you saw and think I could help, it's best to [e-mail me.](mailto:hi@solvak.ee)
+If you liked what you saw and think I could help, it's best to (email: mailto:hi@solvak.ee text: email me.)

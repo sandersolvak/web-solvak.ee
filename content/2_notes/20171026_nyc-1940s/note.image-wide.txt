@@ -5,7 +5,7 @@ Cover: (image: todd-webb-nyc.jpg class: cover)
 
 Title:
 
-(link: https://loeildelaphotographie.com/en/a-city-seen-todd-webbs-postwar-new-york/ text: “See a City: Todd Webb’s New York” target: _blank). Todd Webb’s photos of New York in the 1940s and 1950s.
+(link: https://loeildelaphotographie.com/en/a-city-seen-todd-webbs-postwar-new-york/ text: “See a City: Todd Webb’s New York”). Todd Webb’s photos of New York in the 1940s and 1950s.
 
 ----
 
