@@ -5,8 +5,8 @@
 	</a>
 <?php endif ?>
 
-<section class="col-1">
-	<p><?= $article->title()->kt() ?></p>
+<section>
+	<?= $article->title()->kt() ?>
 
 	<time><?= $article->date()->toDate('d F Y') ?></time>
 

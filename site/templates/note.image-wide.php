@@ -12,8 +12,8 @@
 			</a>
 		<?php endif ?>
 
-		<section class="col-1">
-			<p><?= $page->title()->kt() ?></p>
+		<section>
+			<?= $page->title()->kt() ?>
 
 			<time><?= $page->date()->toDate('d F Y') ?></time>
 

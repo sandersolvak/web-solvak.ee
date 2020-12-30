@@ -16,14 +16,14 @@
 			<?php endif ?>
 		</header>
 
-		<div class="col-2 lede">
+		<section class="col-2 lede">
 			<?= $page->intro()->kt() ?>
-		</div>
+		</section>
 
 		<section class="wide">
 			<?= $page->text()->kt() ?>
 		</section>
-		
+
 	</article>
 
 	<?php snippet('pagenav') ?>
