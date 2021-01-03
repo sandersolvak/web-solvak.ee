@@ -1,0 +1,26 @@
+
+Title: Whale
+
+----
+
+Headline:
+
+----
+
+Date: 2015-02-05 16:30
+
+----
+
+Tags: play
+
+----
+
+Cover: (image: whale.jpg)
+
+----
+
+Intro:
+
+----
+
+Text:

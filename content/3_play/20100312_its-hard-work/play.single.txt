@@ -1,0 +1,26 @@
+
+Title: It's Hard Work
+
+----
+
+Headline:
+
+----
+
+Date: 2010-06-07 16:37
+
+----
+
+Tags: play
+
+----
+
+Cover: (image: Its-Hard-Work-20-Days.jpg)
+
+----
+
+Intro:
+
+----
+
+Text: 20 workdays of mouse movements capture with the (link: https://flowingdata.com/2010/02/09/track-mouse-activity-on-your-computer/ text: Mousepath) app.
