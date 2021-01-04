@@ -9,7 +9,7 @@
 		<?= $page->text()->kt() ?>
 	</header>
 
-	<div>
+	<div class="thumbs">
 		<?php foreach ($articles as $article): ?>
 				<article>
 					<?php foreach($article->images() as $picture): ?>
@@ -17,9 +17,6 @@
 				      <?= $picture->resize(null, 600) ?>
 				    </a>
 				  <?php endforeach ?>
-					<a href="<?php echo url('play', ['params' => ['article' => $article]]) ?>">
-						<?= $article->intro()->kt() ?>
-					</a>
 				</article>
 		<?php endforeach ?>
 	</div>

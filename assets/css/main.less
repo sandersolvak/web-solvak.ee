@@ -308,35 +308,41 @@ main.work {
 		border-bottom: none;
 	}
 }
+
 main.play {
-	& div,
-	& article,
-	& article a {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+	& .thumbs {
+		margin-bottom: var(--xl);
+		& article {
+			height: 300px;
+			margin: 0 var(--m) var(--m) 0;
+			&:hover {
+				& img {
+					transform: scale(1.01);
+				}
+			}
+		}
 	}
-	& article {
-		align-items: flex-start;
-		max-height: 400px;
-		margin: 0 var(--l) var(--l) 0;
-		& a {
-			align-items: center;
-			justify-content: center;
-			background-color: var(--light-gray-color);
+	& article.post {
+			& figure {
+				grid-column: ~'1 / 3';
+				grid-row: ~'1 / 2';
+				max-height: 800px;
+				height: auto;
+				width: 100%;
+				margin-bottom: 0;
+				background-color: var(--light-gray-color);
+				display: flex;
+				& img {
+					margin: auto;
+					height: auto;
+					max-height: 100%;
+				}
+			}
 			& img, & p {
 				width: auto;
 				max-width: 100%;
 				flex: 0 1 auto;
 			}
-			& img {
-				max-height: 400px;
-			}
-			& p {
-				max-width: 300px;
-				margin: var(--m);
-			}
-		}
 		@media(max-width: 480px) {
 			width: 100%;
 			max-height: unset;
@@ -350,7 +356,6 @@ main.play {
 		}
 	}
 }
-
 article {
 	margin: auto;
 	&:last-child {

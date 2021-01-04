@@ -2,14 +2,12 @@
 
 <?php snippet('header') ?>
 
-<main class="notes">
+<main class="notes play">
 
 	<article class="post">
-			<a href="<?= $page->link() ?>" class="cover">
-				<?= $page->cover()->kt() ?>
-			</a>
+		<?= $page->cover()->kt() ?>
 
-		<header class="sticky">
+		<header>
 			<h2><a href="<?= $page->link() ?>"><?= $page->headline() ?></a></h2>
 
 			<time><?= $page->date()->toDate('d F Y') ?></time>
