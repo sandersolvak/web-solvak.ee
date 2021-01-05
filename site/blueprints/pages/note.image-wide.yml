@@ -2,16 +2,6 @@ title: Note - wide image
 icon: 🌁
 num: '{{ page.date.toDate("Ymd") }}'
 
-status:
-  draft:
-    label: Draft
-    text: The article is still in draft mode. It can only be seen by editors with panel access.
-  unlisted:
-    label: In Review
-    text: The article is online and can be visited with the direct URL. The team must still give the final go to publish it.
-  listed:
-    label: Published
-    text: The article is online and listed in the blog
 
 columns:
   - width: 2/3
@@ -38,7 +28,13 @@ columns:
         fields:
           date:
             type: date
-            time: true
+            display: YYYY-MM-DD
+            default: now
+          time:
+            label: Time
+            type: time
+            display: HH:mm
+            step: 1
             default: now
           tags:
             type: tags

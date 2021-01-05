@@ -21,3 +21,5 @@ columns:
         extends: sections/articles
         headline: Published
         status: listed
+        sortBy: date desc
+        limit: 20
