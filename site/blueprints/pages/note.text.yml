@@ -28,7 +28,9 @@ columns:
           date:
             type: date
             default: now
+            display: YYYY-MM-DD
             time: true
+              display: HH:mm
           tags:
             type: tags
       gallery:

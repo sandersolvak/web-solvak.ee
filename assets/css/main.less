@@ -475,6 +475,12 @@ article {
 	}
 	&.wide {
 		grid-gap: 0;
+		& section {
+			margin-left: var(--l);
+			@media(max-width: 840px) {
+				margin-left: inherit;
+			}
+		}
 	}
 	&.tall { /* Posts with a portrait orientation main image such as photo posts */
 		display: grid;

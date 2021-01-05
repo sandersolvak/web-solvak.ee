@@ -8,7 +8,7 @@
 <section>
 	<?= $article->text()->kt() ?>
 
-	<time><?= $article->date()->toDate('d F Y') ?></time>
+	<time><?= $article->date()->toDate('d. F Y H:i') ?></time>
 
 	<?php if ($article->tags()->isNotEmpty()) : ?>
 		<p class="post-meta">Filed under:

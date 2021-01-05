@@ -15,7 +15,7 @@
 		<section>
 			<?= $page->text()->kt() ?>
 
-			<time><?= $page->date()->toDate('d F Y') ?></time>
+			<time><?= $page->date()->toDate('d. F Y H:i') ?></time>
 
 			<?php if ($page->tags()->isNotEmpty()) : ?>
 				<?php snippet('note.tags') ?>

@@ -11,11 +11,11 @@
 		<?php endif ?>
 
 		<header class="sticky">
-			<?php if ($article->title()->isNotEmpty()) : ?>
+			<?php if ($page->title()->isNotEmpty()) : ?>
 				<h2 class="h1"><a href="<?= $page->link() ?>"><?= $page->title() ?></a></h2>
 			<?php endif ?>
 
-			<time><?= $page->date()->toDate('d F Y') ?></time>
+			<time><?= $page->date()->toDate('d. F Y H:i') ?></time>
 
 			<?php if ($page->tags()->isNotEmpty()) : ?>
 				<?php snippet('note.tags') ?>
