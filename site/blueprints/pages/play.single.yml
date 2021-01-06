@@ -1,4 +1,5 @@
-title: Play
+title: Play project
+num: '{{ page.date.toDate("Ymd") }}'
 
 columns:
   - width: 1/2
@@ -6,12 +7,30 @@ columns:
       info:
         type: fields
         fields:
+          cover:
+            type: text
+            placeholder: use kirbytext syntax with class 'cover'
           headline:
             type: text
+            placeholder: optional title
           text:
             type: textarea
           tags:
             type: text
+
+      meta:
+        type: fields
+        fields:
+          date:
+            type: date
+            display: YYYY-MM-DD
+            default: now
+          time:
+            label: Time
+            type: time
+            display: HH:mm
+            step: 1
+            default: now
 
   - width: 1/2
     sections:

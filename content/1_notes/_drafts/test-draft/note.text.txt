@@ -1,0 +1,33 @@
+Title: test draft
+
+----
+
+Cover: 
+
+----
+
+Alt-title: Testing draft date writing
+
+----
+
+Link: 
+
+----
+
+Lede: 
+
+----
+
+Text: 
+
+----
+
+Date: 2021-01-06
+
+----
+
+Time: 13:13:00
+
+----
+
+Tags: 

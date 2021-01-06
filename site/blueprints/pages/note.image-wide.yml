@@ -14,7 +14,7 @@ columns:
             placeholder: Alternative title w/o links for the homepage
           cover:
             type: text
-            placeholder: use kirbytext syntax with 'cover' class
+            placeholder: use kirbytext syntax with class 'cover'
           link:
             type: text
           text:

@@ -1,9 +1,25 @@
 title: Play
+icon: 🎁
 
-sections:
-  projects:
-    type: pages
-    layout: cards
-    image:
-      ratio: 1/1
-      cover: true
+columns:
+  - width: 1/2
+    sections:
+      drafts:
+        extends: sections/articles
+        headline: Drafts
+        status: draft
+        sortBy: date desc
+
+      unlisted:
+        extends: sections/articles
+        headline: In review (unlisted)
+        status: unlisted
+
+  - width: 1/2
+    sections:
+      listed:
+        extends: sections/articles
+        headline: Published
+        status: listed
+        sortBy: date desc
+        limit: 20

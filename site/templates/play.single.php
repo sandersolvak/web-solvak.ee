@@ -10,7 +10,7 @@
 		<header>
 			<h2><a href="<?= $page->link() ?>"><?= $page->headline() ?></a></h2>
 
-			<time><?= $page->date()->toDate('d F Y') ?></time>
+			<time><?= $page->date()->toDate('d. F Y H:i') ?></time>
 
 			<?php if ($page->tags()->isNotEmpty()) : ?>
 				<?php snippet('play.tags') ?>

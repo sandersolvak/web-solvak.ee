@@ -10,7 +10,7 @@ columns:
         fields:
           cover:
             type: text
-            placeholder: use kirbytext syntax with 'cover' class
+            placeholder: use kirbytext syntax with class 'cover'
           alt_title:
             type: text
             placeholder: Alternative title w/o links for the homepage
