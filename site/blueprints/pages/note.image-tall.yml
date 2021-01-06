@@ -2,7 +2,6 @@ title: Note - tall image
 icon: 🌆
 num: '{{ page.date.toDate("Ymd") }}'
 
-
 columns:
   - width: 2/3
     sections:
@@ -28,13 +27,7 @@ columns:
         fields:
           date:
             type: date
-            display: YYYY-MM-DD
-            default: now
-          time:
-            label: Time
-            type: time
-            display: HH:mm
-            step: 1
+            time: true
             default: now
           tags:
             type: tags

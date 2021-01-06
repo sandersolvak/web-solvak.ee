@@ -18,22 +18,18 @@ columns:
           tags:
             type: text
 
+  - width: 1/2
+    sections:
       meta:
         type: fields
         fields:
           date:
             type: date
             display: YYYY-MM-DD
-            default: now
-          time:
-            label: Time
-            type: time
-            display: HH:mm
-            step: 1
-            default: now
+            default: today
+            time: true
+              display: HH:mm
 
-  - width: 1/2
-    sections:
       gallery:
         type: files
         layout: cards

@@ -19,7 +19,7 @@
 		</header>
 
 		<section class="col-2">
-				<?= $page->text()->kt()->or($page->intro()->kt()) ?>
+				<?= $page->text()->kt() ?>
 		</section>
 	</article>
 
