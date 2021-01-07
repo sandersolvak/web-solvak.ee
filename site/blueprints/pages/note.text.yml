@@ -1,5 +1,6 @@
 title: Note - text
 icon: 📝
+num: '{{ page.date.toDate("Ymd") }}'
 
 columns:
   - width: 2/3
@@ -10,9 +11,6 @@ columns:
           cover:
             type: text
             placeholder: use kirbytext syntax with 'cover' class
-          alt_title:
-            type: text
-            placeholder: Alternative title w/o links for the homepage
           link:
             type: text
           lede:
@@ -29,6 +27,7 @@ columns:
             type: date
             default: now
             time: true
+              step: 1
           tags:
             type: tags
       gallery:

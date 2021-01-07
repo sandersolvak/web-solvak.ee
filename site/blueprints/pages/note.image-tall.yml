@@ -8,9 +8,6 @@ columns:
       info:
         type: fields
         fields:
-          alt_title:
-            type: text
-            placeholder: Alternative title w/o links for the homepage
           cover:
             type: text
             placeholder: use kirbytext syntax with class 'cover'
