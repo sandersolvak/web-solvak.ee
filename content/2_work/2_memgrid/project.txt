@@ -1,5 +1,5 @@
 
-Cover: (image: memgrid-001.jpg)
+Cover: (image: memgrid-001.jpg class: cover)
 
 ----
 

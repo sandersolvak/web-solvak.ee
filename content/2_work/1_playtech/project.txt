@@ -1,6 +1,6 @@
 Cover:
 
-(image: playtech-001.jpg)
+(image: playtech-001.jpg class: cover)
 
 ----
 

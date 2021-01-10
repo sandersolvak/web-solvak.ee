@@ -1,4 +1,4 @@
-Cover: (image: logos-cover.jpg)
+Cover: (image: logos-cover.jpg class: cover)
 
 ----
 
