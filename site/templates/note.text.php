@@ -25,7 +25,7 @@
 
 		<section class="col-2">
 			<p class="lede">
-				<?= $page->lede()->kt() ?>
+				<?= $page->lede() ?>
 			</p>
 			<p>
 				<?= $page->text()->kt() ?>

@@ -1,0 +1,25 @@
+Title: The end of history.
+
+----
+
+Cover: 
+
+----
+
+Link: 
+
+----
+
+Lede: This is the end, you have reached the last note on this site.
+
+----
+
+Text: I launched this site in it's current form in early 2021. The previous incarnation was a fully static HTML site without a blog engine and I used Tumbrl to host the blog. Tumblr was super easy to set up and get going, including using custom domains, a no-brainer at the time. When building this new site I looked into ways to convert and import the archive from the Tumblr blog but eventually decided against it and opted instead to cherry-pick some posts and leave the Tumblr version as it is. I don't maintain it in any way, and have no plans to make an effort to keep it alive, should Tumblr go away or whatever. Here it is: (link: https://rednas.tumblr.com/ text: rednas.tumblr.com)
+
+----
+
+Date: 2010-12-31 00:00:00
+
+----
+
+Tags: 
