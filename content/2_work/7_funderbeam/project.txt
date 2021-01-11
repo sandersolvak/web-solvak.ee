@@ -15,12 +15,24 @@ Tags: UI design, UX, web design, branding
 
 ----
 
-Intro:
+Intro: ---intro to my work on Funderbeam---
 
 ----
 
 Text:
+About what I did and do and how
 
-(image: statlab-004.jpg)
+(image: funderbeam-002.jpg)
+(image: funderbeam-003.jpg)
+(image: funderbeam-004.jpg)
 
+## UI design
+About ui stuff
+(image: funderbeam-005.jpg)
+(image: funderbeam-006.jpg)
+
+(image: funderbeam-007.jpg)
+
+### Brand
+About the brand stuff
 ----
