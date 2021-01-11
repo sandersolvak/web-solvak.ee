@@ -12,7 +12,7 @@
 			<time><?= $page->date() ?></time>
 			<?php if ($page->tags()->isNotEmpty()) : ?>
 				<p class="post-meta">Filed under:
-				<a href=""><?= $page->tags() ?></a></p>
+				<?= $page->tags() ?></p>
 			<?php endif ?>
 		</header>
 

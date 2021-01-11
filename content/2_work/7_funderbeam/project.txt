@@ -15,24 +15,30 @@ Tags: UI design, UX, web design, branding
 
 ----
 
-Intro: ---intro to my work on Funderbeam---
+Intro: Funderbeam's product poses a challenge I think any designer just loves to tackle &mdash; how do you take something that until now has had a high buy-in threshold, both literally and figuratively*, and make it approachable for everyone? In this case investing in and trading growth companies on a platform not unlike any major stock exchange. Lucky me.
 
 ----
 
 Text:
-About what I did and do and how
+I initially joined Funderbeam as a UI designer to help keep their UI design on track and evolve and improve it. After conducting an inventory of all the different elements designed and added at different times, I set out to reduce the number of elements and unify the style. I then developed a design system to help keep it that way and to reduce the time it took for features to go from design into development and get launched.
+
+The UI has been iteratively simplified in an effort to reduce visual noise. Exchange interfaces are rather busy information-dense by their very nature. Repeating and reusing interface patterns and keeping the number of different elements low has served that purpose, as well as reducing the number of colours while maintaining a good balance of contrast without being neither too stark nor too soft.
+
+Something as complex as trading has an inevitable learning curve, but we've aimed to bring it more to the middle of the road. The pros will no doubt keep their tools. For now.
+
+(image: funderbeam-005.jpg)
+(image: funderbeam-006.jpg)
+
+## Website and brand
+I've since transitioned from the role of UI designer to managing all design related things in Funderbeam. I'm still in charge of the UI, but also the design of the website and everything else that's visual, be it in-house or customer-facing.
+
+The visual identity of Funderbeam has, much like the interface of the products and the company itself, grown through time from a scrappy startup to a more sophisticated and mature self.
 
 (image: funderbeam-002.jpg)
 (image: funderbeam-003.jpg)
 (image: funderbeam-004.jpg)
-
-## UI design
-About ui stuff
-(image: funderbeam-005.jpg)
-(image: funderbeam-006.jpg)
-
 (image: funderbeam-007.jpg)
 
-### Brand
-About the brand stuff
+*Investing and trading on stock markets usually requires either a deeper than average knowledge of the field or deep pockets.
+
 ----
