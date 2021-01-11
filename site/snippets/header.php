@@ -18,6 +18,7 @@
 
 	<!-- Favicons -->
 	<link rel="icon" type="image/svg+xml" href="<?= url('favicon.svg') ?>">
+	<link rel="mask-icon" href="<?= url('favicon.svg') ?>" color="#ffbe12">
 
 	<!-- Fonts -->
 	<style type="text/css">
