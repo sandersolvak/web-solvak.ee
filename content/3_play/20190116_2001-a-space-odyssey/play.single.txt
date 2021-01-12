@@ -1,0 +1,21 @@
+Title: 2001 A Space Odyssey
+
+----
+
+Cover: (image: 2001-a-space-odyssey-poster.jpg class: cover)
+
+----
+
+Headline: 2001 A Space Odyssey
+
+----
+
+Text: Every 20th frame from the director's cut of 2001 A Space Odyssey, extracted using the Processing software suite. Measures 1189 x 841mm (A0).
+
+----
+
+Tags: play
+
+----
+
+Date: 2019-01-16 17:35:00
