@@ -7,12 +7,12 @@
  * More about controllers: https://getkirby.com/docs/guide/templates/controllers
  */
 
-return function ($page) {
+ return function ($page) {
 
-    $gallery = $page->images()->sortBy('sort', 'filename');
+     $gallery = $page->children();
 
-    return [
-        'gallery' => $gallery
-    ];
+     return [
+         'gallery' => $gallery
+     ];
 
-};
+ };

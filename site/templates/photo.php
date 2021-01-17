@@ -13,7 +13,7 @@
 				</a>
 				<div class="thumbs">
 					<?php foreach($album->images() as $picture): ?>
-				    <a href="<?= $picture->link()->or($picture->url()) ?>">
+				    <a href="<?= $album->url() . '/' . $picture->name() ?>">
 				      <?= $picture->resize(null, 160) ?>
 				    </a>
 				  <?php endforeach ?>

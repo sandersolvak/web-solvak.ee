@@ -5,21 +5,24 @@
 <main class="photo-single">
 
 	<div class="image">
-		<img src="<?= $image->url() ?>" alt="" loading="lazy">
+		<img src="<?= $page->parent()->images()->findBy('name', $page->slug())->url() ?>" alt="" loading="lazy">
 	</div>
 
 	<div class="controls">
-		<a href="<?= $album->url() ?>" aria-label="Close">&times;</a>
+		<a href="<?= $page->parent()->url() ?>" aria-label="Close">&times;</a>
 		<?php if ($page->hasPrevListed()): ?>
-		<a href="<?= $page->prevListed()->url() ?>" aria-label="Previous">←</a>
-		<?php else: ?>
-		<span>←</span>
+			<a href="<?= $page->prevListed()->url() ?>" aria-label="Previous">←</a>
+			<?php else: ?>
+			<span>←</span>
+		<?php endif ?>
+
 		<?php if ($page->hasNextListed()): ?>
-		<a href="<?= $page->nextListed()->url() ?>" aria-label="Next">→</a>
-		<?php else: ?>
-		<span>→</span>
-	<?php endif ?>
+			<a href="<?= $page->nextListed()->url() ?>" aria-label="Next">→</a>
+			<?php else: ?>
+			<span>→</span>
+		<?php endif ?>
 	</div>
+
 
 </main>
 

@@ -13,8 +13,8 @@
 	<article>
 		<div class="thumbs"<?= attr(['data-even' => $gallery->isEven(), 'data-count' => $gallery->count()], ' ') ?>>
 			<?php foreach ($gallery as $picture): ?>
-				<a href="<?= $picture->link()->or($picture->url()) ?>">
-					<?= $picture->resize(null, 160) ?>
+				<a href="<?= $picture->url() ?>">
+					<?php echo $picture->parent()->images()->findBy('name', $picture->slug()) ?>
 				</a>
 			<?php endforeach ?>
 		</div>
