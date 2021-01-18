@@ -663,9 +663,14 @@ article {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			background-color: var(--light-gray-color);
+			background-color: #f9f8f3;
+			opacity: 0.5;
+			&:hover {
+				opacity: 1;
+				background-color: var(--brand-color);
+			}
 		}
-		& span {
+		& span, & span:hover {
 			opacity: 0.5;
 		}
 	}
@@ -683,6 +688,7 @@ article {
 		justify-self: center;
 		& img {
 			max-height: 100%;
+			max-width: 100%;
 		}
 	}
 }

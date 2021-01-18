@@ -1,0 +1,16 @@
+title: Album
+
+columns:
+  - width: 2/3
+    sections:
+      gallery:
+        type: files
+        layout: cards
+        image:
+          ratio: 1/1
+
+  - width: 1/3
+    fields:
+      intro:
+        type: textarea
+        placeholder: "(image: )"

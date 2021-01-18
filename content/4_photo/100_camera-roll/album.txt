@@ -1,12 +1,9 @@
-
 Title: Camera roll
 
 ----
 
-Date: 
+Intro: This is more like a feed of photos, not an album really.
 
 ----
 
-Intro:
-
-This is a feed of photos, not an album really.
+Date: 

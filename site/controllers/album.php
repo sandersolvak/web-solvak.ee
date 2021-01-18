@@ -9,7 +9,7 @@
 
  return function ($page) {
 
-     $gallery = $page->children();
+     $gallery = $page->children()->flip();
 
      return [
          'gallery' => $gallery
