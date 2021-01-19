@@ -14,7 +14,7 @@ return function ($page) {
   }
 
   // add pagination
-  $articles = $articles->paginate(20);
+  $articles = $articles->paginate(24);
 
   // create a shortcut for pagination
   $pagination = $articles->pagination();

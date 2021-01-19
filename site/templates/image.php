@@ -11,15 +11,15 @@
 	<div class="controls">
 		<a href="<?= $page->parent()->url() ?>" aria-label="Close">&times;</a>
 		<?php if ($page->hasNext()): ?>
-		<a href="<?= $page->next()->url() ?>" aria-label="Next">←</a>
+		<a href="<?= $page->next()->url() ?>" aria-label="Next">→</a>
 		<?php else: ?>
-		<span>←</span>
+		<span>→</span>
 		<?php endif ?>
 
 		<?php if ($page->hasPrev()): ?>
-		<a href="<?= $page->prev()->url() ?>" aria-label="Previous">→</a>
+		<a href="<?= $page->prev()->url() ?>" aria-label="Previous">←</a>
 		<?php else: ?>
-		<span>→</span>
+		<span>←</span>
 		<?php endif ?>
 	</div>
 
