@@ -1,9 +1,6 @@
-Title: Camera roll
+
+Title: Camera Roll, 2020
 
 ----
 
-Intro: This is more like a feed of photos, not an album really.
-
-----
-
-Date: 
+Date: 2020

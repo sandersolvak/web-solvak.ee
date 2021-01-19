@@ -1,14 +1,18 @@
-# Untrack fonts folder to avoid possible license breaches when making the repo public
-
-
-# temporarily exclude Kirby kits until deleted
-starterkit-master/
-plainkit-master/
+# Kirby itself
 kirby/
 
 # Fonts
+# ignore the fonts folder to avoid license breaches when making the repo public
 # ---------------
 assets/fonts/
+
+# Content that maybe shouldn't be in the repo - images in blog posts, photos.
+# ------------
+content/4_photo/**/*.jpg
+
+# notes
+content/1_notes/**/*.jpg
+content/1_notes/**/*.png
 
 # System files
 # ------------
