@@ -280,6 +280,7 @@ main.about { /* homepage layout */
 		margin-top: var(--xl);
 		@media(max-width: 840px) {
 			display: block;
+			margin-top: var(--l);
 		}
 		& header {
 			grid-area: col-1;
@@ -415,6 +416,9 @@ article {
 			height: 100%;
 			width: auto;
 			max-width: 100%;
+			@media(max-width: 640px) {
+				height: auto;
+			}
 		}
 	}
 
@@ -663,6 +667,8 @@ article {
 		grid-column-start: 2;
 		grid-column-end: 3;
 		padding: 0;
+		grid-gap: 0;
+		justify-content: flex-end;
 		& a, span {
 			display: flex;
 			align-items: center;
@@ -719,6 +725,10 @@ nav, .controls {
 		grid-auto-rows: 64px;
 		grid-gap: 8px;
 		font-size: var(--text-s);
+	}
+	@media(max-width: 480px) {
+		padding-left: var(--s);
+		padding-right: var(--s);
 	}
 	& a {
 		text-decoration: none;
@@ -806,7 +816,7 @@ footer {
 
 	}
 	& .sun:before {
-		content: '☀';
+		content: '\2600';
 		display: inline-block;
 		width: 16px;
 		height: 16px;
