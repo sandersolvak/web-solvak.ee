@@ -601,6 +601,10 @@ article {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
 	grid-gap: var(--m);
+	@media(max-width: 420px) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 .tre-col {
 	display: grid;
