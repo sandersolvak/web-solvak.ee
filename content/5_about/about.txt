@@ -18,14 +18,14 @@ My time off is spent with (link: https://www.letterboxd.com/sandersolvak/ text: 
 Connect:
 ##Connect
 
-If you want to get in touch for a project, it's best to (email: mailto:hi@solvak.ee text: e-mail me.) I'm also on (link: https://ee.linkedin.com/in/sandersolvak text: LinkedIn) and (link: https://twitter.com/sandersolvak text: twitter.)
+If you want to get in touch for a project, it's best to (email: hi@solvak.ee text: e-mail me.) I'm also on (link: https://ee.linkedin.com/in/sandersolvak text: LinkedIn) and (link: https://twitter.com/sandersolvak text: twitter.)
 
 ----
 Colophon:
 
 ##Colophon
 
-This site is designed and built by yours truly. The headings are set in (link: http://prospectus.losttype.com/ text: Prospectus) and the rest in (link: https://github.com/impallari/Libre-Franklin text: Libre Franklin.) It runs on a lovely little CMS called (link: getkirby.com/ text: Kirby). No tracking or snooping or bullshit. Simple.
+This site is designed and built by yours truly. The headings are set in (link: http://prospectus.losttype.com/ text: Prospectus) and the rest in (link: https://github.com/impallari/Libre-Franklin text: Libre Franklin.) It runs on a lovely little CMS called (link: https://www.getkirby.com/ text: Kirby). No tracking or snooping or bullshit. Simple.
 
 ----
 Blogroll:
