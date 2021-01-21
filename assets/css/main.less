@@ -824,17 +824,16 @@ footer {
 		}
 
 	}
-	& .sun:before {
-		content: '\2600';
+	& .sun {
+		fill: currentColor;
 		display: inline-block;
-		width: 16px;
-		height: 16px;
-		transform-origin: 5.97px 8.55px;
+		width: 10px;
+		height: 10px;
+		transform-origin: 48.5% 77.5%;
 	}
-	&:hover .sun:before{
-		color: var(--red-color);
+	&:hover .sun{
+		fill: var(--red-color);
 		animation: spin 3s infinite linear;
-		transform-origin: 5.97px 8.55px;
 	}
 }
 /*----------------------------
