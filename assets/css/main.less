@@ -348,6 +348,7 @@ main.play {
 				margin-bottom: 0;
 				background-color: var(--light-gray-color);
 				display: flex;
+				align-items: flex-start;
 				& img {
 					margin: auto;
 					height: auto;
@@ -700,7 +701,7 @@ article {
 			}
 		}
 	}
-	& div.image {
+	& .image {
 		grid-row-start: 1;
 		grid-row-end: 2;
 		grid-column-start: 1;
@@ -715,6 +716,27 @@ article {
 		& img {
 			max-height: 100%;
 			max-width: 100%;
+		}
+	}
+	@media(max-width: 480px) { /* places the controls at the bottom on small screens */
+		display: flex;
+		height: 100%;
+		overflow: hidden;
+		& .controls {
+			grid-template-columns: 64px 64px 64px;
+			grid-template-rows: 64px;
+			margin: auto;
+			justify-content: center;
+			position: absolute;
+			bottom: 48px;
+		}
+		& .image {
+			height: 98%;
+			max-width: 96%;
+			margin: auto;
+			& img {
+				height: auto;
+			}
 		}
 	}
 }

@@ -1,4 +1,5 @@
 title: Album
+num: '{{ page.date.toDate("Ymd") }}'
 
 columns:
   - width: 2/3
@@ -13,4 +14,5 @@ columns:
     fields:
       intro:
         type: textarea
-        placeholder: "(image: )"
+      date:
+        type: text
