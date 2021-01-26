@@ -19,6 +19,9 @@
 	<!-- Favicons -->
 	<link rel="icon" type="image/svg+xml" href="<?= url('favicon.svg') ?>">
 	<link rel="mask-icon" href="<?= url('favicon.svg') ?>" color="#ffbe12">
+	<link rel="apple-touch-icon" href="<?= url('favicon.png') ?>">
+	<link rel="icon" type="image/png" href="<?= url('favicon.png') ?>">
+	<meta name="theme-color" content="#ffffff">
 
 	<!-- Fonts -->
 	<style type="text/css">
