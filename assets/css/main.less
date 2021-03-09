@@ -6,7 +6,7 @@
 	*/
 
 	/* Spacing, base unit, t-shirt sizing (s,m,l,xl) */
-	--spacing-unit: 8px;
+	--unit: 8px;
 	--xs: 4px;
 	--s: 8px;
 	--m: 16px;
@@ -294,6 +294,9 @@ main.about { /* homepage layout */
 		}
 		& section {
 			grid-area: col-2;
+			& ul li {
+				margin-bottom: 24px;
+			}
 			& ul li:last-of-type{
 				padding-top: var(--s);
 			}
