@@ -191,7 +191,7 @@ cite {
 a {
 	text-decoration: underline;
 	text-decoration-color: var(--brand-color);
-	text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
 	text-decoration-thickness: 2px;
 	color: var(--heading-color);
 	transition: var(--fast);
@@ -229,8 +229,8 @@ blockquote {
 	border-left: 3px solid var(--brand-color);
 	transform: translateX(-16px);
 	& p {
-		margin-bottom: var(--s);
 		margin-bottom: 0;
+		margin-top: 0;
 		font-size: var(--text-l);
 	}
 	& p > a {
