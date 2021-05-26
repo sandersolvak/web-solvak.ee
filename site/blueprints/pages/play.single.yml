@@ -9,7 +9,7 @@ columns:
         fields:
           cover:
             type: text
-            placeholder: use kirbytext syntax with class 'cover'
+            help: 'syntax ('image: imagename.jpg class: cover)'
           headline:
             type: text
             placeholder: optional title
@@ -29,6 +29,8 @@ columns:
             default: today
             time: true
               display: HH:mm
+              unit: minute
+              size: 1
 
       gallery:
         type: files

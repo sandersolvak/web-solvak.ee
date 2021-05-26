@@ -10,7 +10,7 @@ columns:
         fields:
           cover:
             type: text
-            placeholder: use kirbytext syntax with class 'cover'
+            help: 'syntax ('image: imagename.jpg class: cover)'
           link:
             type: text
           text:
@@ -25,7 +25,10 @@ columns:
           date:
             type: date
             time: true
+              unit: minute
+              size: 1
             default: now
+
           tags:
             type: tags
       gallery:

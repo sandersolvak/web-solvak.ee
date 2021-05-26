@@ -59,12 +59,12 @@ Mark Boulton:
 Jen Simmons:
 	Name: Jen Simmons
 	Does: designer/developer
-	Website: https://jensimmons.com/
+	Website: https://jensimmons.com
 
 Dan Mall:
 	Name: Dan Mall
 	Does: creative director
-	Website: http://danmall.me/
+	Website: http://danmall.com
 
 Rachel Andrew:
 	Name: Rachel Andrew
