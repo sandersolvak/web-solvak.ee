@@ -6,7 +6,6 @@ columns:
     sections:
       gallery:
         type: files
-        layout: cards
         image:
           ratio: 1/1
 
