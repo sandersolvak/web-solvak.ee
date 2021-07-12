@@ -22,6 +22,7 @@ A selection of logos.
 
 Text:
 
+(image: logos-VanDerFritt.jpg caption: Van Der Fritt, a food truck)
 (image: logos-MayaLotto.jpg caption: Maya Lotto lottery)
 (image: logos-AlsoKnowsIT.jpg caption: IT consultancy AlsoKnowsIT)
 (image: logos-JointVentureProjects.jpg caption: Joint Venture Projects)
