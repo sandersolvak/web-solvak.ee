@@ -231,7 +231,7 @@ blockquote {
 	& p {
 		margin-bottom: 0;
 		margin-top: 0;
-		font-size: var(--text-l);
+		font-size: var(--text);
 	}
 	& p > a {
 		font-size: var(--text-s);
@@ -322,7 +322,32 @@ main.work {
 		border-bottom: none;
 	}
 }
+main.notes {
+	article::after {
+		content: '∽';
+		text-align: center;
+		font-size: 160%;
+		line-height: 0;
+		font-weight: bold;
+		color: var(--light-gray-color);
+		height: 1px;
+		width: 100%;
+		display: block;
+		grid-column: 1/end;
+		transform: translateY(64px);
+		background: linear-gradient(90deg,
+			var(--light-gray-color) 0%,
+			var(--light-gray-color) 46%,
+			#f9f8f3 46%,
+			#f9f8f3 54%,
+			var(--light-gray-color) 54%,
+			var(--light-gray-color) 100%);
+			@media(max-width: 480px) {
+				transform: translateY(24px);
+			}
+	}
 
+}
 main.play {
 	& .thumbs {
 		margin-bottom: var(--xl);
@@ -389,6 +414,7 @@ article {
 		border-bottom: none;
 	}
 }
+
 .post {
 	display: grid;
 	grid-template-columns: minmax(min-content, 480px) minmax(476px, 1fr);
@@ -397,7 +423,6 @@ article {
 	margin-top: var(--l);
 	margin-bottom: var(--xl);
 	padding-bottom: var(--xl);
-	border-bottom: 1px solid var(--light-gray-color);
 	@media(max-width: 840px) {
 		display: block;
 	}
