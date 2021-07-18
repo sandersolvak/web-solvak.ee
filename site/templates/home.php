@@ -41,7 +41,7 @@
 			<ul class="no-bullet">
 				<?php $featured = page('play')->children()->listed()->flip()->limit(3); ?>
 				<?php foreach ($featured as $project): ?>
-					<li><a href="<?= $project->url() ?>"><?= $project->title() ?></a> <span class="post-meta m-left--xs"><?= $post->date()->toDate('d. M Y') ?></span></li>
+					<li><a href="<?= $project->url() ?>"><?= $project->title() ?></a> <span class="post-meta m-left--xs"><?= $project->date()->toDate('d. M Y') ?></span></li>
 				<?php endforeach ?>
 				<li><a href="<?= url('play') ?>" class="link-right">View all</a></li>
 			</ul>
