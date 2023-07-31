@@ -6,7 +6,7 @@ Description: The personal website of designer Sander Solvak.
 
 ----
 
-Keywords: graphic design, web design, webdesign, print design, identity design, user interface design, UI design"
+Keywords: product design, graphic design, web design, webdesign, print design, identity design, user interface design, UI design"
 
 ----
 
@@ -14,6 +14,6 @@ Author: Made by Sander Solvak
 
 ----
 
-Copyright: © 2016 - 2021 Sander Solvak. Be nice, OK.
+Copyright: © 2016 - 2023 Sander Solvak. Be nice, OK.
 
 ----
