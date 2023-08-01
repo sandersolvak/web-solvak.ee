@@ -37,6 +37,7 @@ Icon
 # Config files
 # ---------------
 /site/config/config.php
+.htaccess
 
 # Cache Files
 # ---------------
