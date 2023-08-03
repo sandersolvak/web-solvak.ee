@@ -493,6 +493,7 @@ article {
 		}
 		& figure {
 			width: auto;
+			margin-top: 2em;
 			& img {
 				width: 100%;
 				height: auto;
@@ -500,11 +501,12 @@ article {
 		}
 	}
 	&.wide, &.wide a { /* Places the element across both columns */
-		grid-column: ~'1 / 3';
+		grid-column: ~'1 / last';
 		position: relative;
 		& figure {
 			margin-bottom: var(--m);
 			overflow: hidden;
+			max-height: unset;
 			& img {
 			}
 			& figcaption {
@@ -531,7 +533,7 @@ article {
 	}
 	&.tall { /* Posts with a portrait orientation main image such as photo posts */
 		display: grid;
-		grid-template-columns: minmax(320px, 720px) minmax(320px, 1fr);
+		grid-template-columns: minmax(320px, 60vh) minmax(320px, 1fr);
 		grid-template-areas:
 		"cover caption";
 		align-items: end;
@@ -547,7 +549,7 @@ article {
 			grid-area: cover;
 			align-self: end;
 			object-fit: contain;
-			max-height: none;
+			max-height: 100vh;
 			margin-bottom: 0;
 			& figure {
 				max-width: 1280px;
@@ -555,7 +557,7 @@ article {
 				img {
 					width: 100%;
 					max-width: 1280px;
-					object-fit: cover;
+					object-fit: contain;
 				}
 				@media(max-width: 840px) {
 					& img {
@@ -813,15 +815,13 @@ nav, .controls {
 		}
 		&:active {
 			transform: scale(1);
+			background-color: var(--brand-color);
 		}
 		&.active {
-			text-decoration: underline;
-			text-decoration-thickness: 2px;
-			text-decoration-offset: 2px;
-			text-decoration-color: var(--brand-color);
 			transition: var(--slow);
+			background-color: var(--brand-color);
 			&:hover {
-				text-decoration-thickness: 0px;
+
 			}
 		}
 		&.home {
