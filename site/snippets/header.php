@@ -49,6 +49,9 @@
 	<!-- Styles -->
   <?= css(['assets/css/main.css', '@auto']) ?>
 
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="Noted" href="<?= site()->url() ?>/feed"/>
+
 </head>
 
 <body>

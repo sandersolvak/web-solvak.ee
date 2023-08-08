@@ -22,4 +22,12 @@ return function ($page) {
   // pass $articles and $pagination to the template
 	return compact('articles', 'tags', 'tag', 'pagination');
 
+  // RSS plugin stuff
+  $options = [
+    'title'       => 'Noted',
+    'description' => 'Interesting and/or cool stuff I have come across from art, design, technology, photography, movies watched and liked and, occasionally, my thoughts.',
+    'link'        => 'notes'
+];
+echo page('notes')->children()->listed()->flip()->limit(10)->feed($options);
+
 };
