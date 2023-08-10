@@ -1,6 +1,6 @@
 
 <?php if ($article->cover()->isNotEmpty()) : ?>
-	<a href="<?php echo url('notes', ['params' => ['article' => $article]]) ?>">
+	<a href="<?= $article->url() ?>">
 		<?= $article->cover()->kt() ?>
 	</a>
 <?php endif ?>

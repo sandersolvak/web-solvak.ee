@@ -13,7 +13,7 @@
 		<?php foreach ($articles as $article): ?>
 				<article>
 					<?php foreach($article->images() as $picture): ?>
-				    <a href="<?php echo url('play', ['params' => ['article' => $article]]) ?>">
+				    <a href="<?= $article->url() ?>">
 				      <?= $picture->resize(null, 600) ?>
 				    </a>
 				  <?php endforeach ?>

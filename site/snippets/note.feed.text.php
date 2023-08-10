@@ -5,7 +5,7 @@
 
 <header class="sticky">
 	<?php if ($article->title()->isNotEmpty()) : ?>
-		<h2 class="h1"><a href="<?php echo url('notes', ['params' => ['article' => $article]]) ?>"><?= $article->title() ?></a></h2>
+		<h2 class="h1"><a href="<?= $article->url() ?>"><?= $article->title() ?></a></h2>
 	<?php endif ?>
 	<time><?= $article->date()->toDate('d. F Y H:i') ?></time>
 
