@@ -13,6 +13,7 @@ content/4_photo/**/*.jpg
 # notes
 content/1_notes/**/*.jpg
 content/1_notes/**/*.png
+content/1_notes/**/*.txt
 
 # System files
 # ------------
