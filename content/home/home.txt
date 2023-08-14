@@ -5,7 +5,7 @@ Title: Hello!
 
 Text:
 
-My name is Sander and I’m a designer based in Tallinn, Estonia. I’ve helped clients both big and small with websites, apps, design systems, branding, installations, books and more. Currently design manager at (link: https://www.funderbeam.com/ text: Funderbeam). I like to keep things clean and simple and love (link: https://letterboxd.com/sandersolvak/ text: movies), food, travelling, bicycles and (link: /photo text: making pictures).
+I'm (link: /about text: Sander), a designer based in Tallinn, Estonia. I’ve helped clients both big and small by designing products, interfaces, experiences, processes. Currently principal designer at (link: https://www.funderbeam.com/ text: Funderbeam). I like to keep things clean and simple and love (link: https://letterboxd.com/sandersolvak/ text: movies), food, travelling, bicycles and (link: /photo text: making pictures).
 
 Thanks for stopping by, have a very nice day!
 
