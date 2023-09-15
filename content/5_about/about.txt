@@ -131,3 +131,8 @@ Austin Kleon:
 	Name: Austin Kleon
 	Does: a writer who draws
 	Website: https://austinkleon.com/
+
+Christopher Butler
+  Name: Christopher Butler
+  Does: designer
+  Website: https://www.chrbutler.com/
