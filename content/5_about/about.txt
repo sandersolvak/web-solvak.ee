@@ -111,11 +111,6 @@ Jeremia Shoaf:
 	Does: designer & type enthusiast
 	Website: https://www.typewolf.com/
 
-Ben Pierrat:
-	Name: Ben Pierrat
-	Does: designer
-	Website: http://www.pieratt.com/
-
 Brad Frost:
 	Name: Brad Frost
 	Does: designer & developer
