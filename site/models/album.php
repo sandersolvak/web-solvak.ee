@@ -4,7 +4,7 @@ class AlbumPage extends Page
 {
 
     // Use images as pages
-    public function children()
+    public function children(): Pages
     {
         $images = [];
 
