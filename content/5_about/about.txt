@@ -133,3 +133,8 @@ Christopher Butler
   Name: Christopher Butler
   Does: designer
   Website: https://www.chrbutler.com/
+
+Jason Santa Maria
+  Name: Jason Santa Maria
+  Does: designer
+  Website: https://www.jasonsantamaria.com
