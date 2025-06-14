@@ -3,7 +3,7 @@ Title: Work
 
 ----
 
-Text: A selection of projects I have worked on.
+Text: A curated set of projects I’ve worked on, mostly focused on product and UI design, with an emphasis on clarity, coherence, and thoughtful systems.
 
 ----
 
