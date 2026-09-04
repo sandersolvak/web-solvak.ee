@@ -83,20 +83,10 @@ Craig Mod:
 	Does: writer & photographer
 	Website: https://craigmod.com/
 
-Khoi Vinh:
-	Name: Khoi Vinh
-	Does: designer
-	Website: https://www.subtraction.com/
-
 Tobias van Schneider:
 	Name: Tobias van Schneider
 	Does: designer
 	Website: https://vanschneider.com/
-
-Jessica Hische:
-	Name: Jessica Hische
-	Does: artist & author
-	Website: https://www.jessicahische.is/
 
 Jonnie Hallman:
 	Name: Jonnie Hallman
@@ -107,11 +97,6 @@ James Jean:
 	Name: James Jean
 	Does: artist
 	Website: http://www.jamesjean.com/
-
-Jeremia Shoaf:
-	Name: Jeremia Joaf
-	Does: designer & type enthusiast
-	Website: https://www.typewolf.com/
 
 Brad Frost:
 	Name: Brad Frost
