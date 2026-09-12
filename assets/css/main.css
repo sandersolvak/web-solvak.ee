@@ -893,7 +893,6 @@ nav, .controls {
 footer {
 	min-height: 200px;
 	font-size: var(--text-s);
-	background-color: var(--brand-color);
 	padding: 32px;
 	margin-top: var(--xl);
 	color: var(--text-color);
@@ -921,7 +920,7 @@ footer {
 			padding: 0.2em;
 			margin-right: var(--m);
 			color: var(--text-color);
-			border-bottom: 1px solid var(--brand-color);
+			border-bottom: 1px solid transparent;
 			text-transform: capitalize;
 			&:hover {
 				color: var(--heading-color);
