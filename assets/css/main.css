@@ -921,10 +921,8 @@ footer {
 			margin-right: var(--m);
 			color: var(--text-color);
 			border-bottom: 1px solid transparent;
-			text-transform: capitalize;
 			&:hover {
-				color: var(--heading-color);
-				border-bottom: 1px solid;
+
 			}
 			&.home {
 				border-bottom: none;
