@@ -1,0 +1,46 @@
+title: About
+icon: 🙂
+
+fields:
+  intro:
+    label: Intro
+    type: textarea
+    size: large
+
+  connect:
+    label: Connect
+    type: textarea
+    help: Include the "##Connect" heading at the top if you want it to show above the text.
+
+  colophon:
+    label: Colophon
+    type: textarea
+    help: Include the "##Colophon" heading at the top if you want it to show above the text.
+
+  blogroll:
+    label: Blogroll intro
+    type: textarea
+    help: Intro text shown above the blogroll list.
+
+  people:
+    label: Blogroll people
+    type: structure
+    help: The people listed in the blogroll.
+    fields:
+      name:
+        label: Name
+        type: text
+        required: true
+      does:
+        label: Role
+        type: text
+      website:
+        label: Website
+        type: url
+    columns:
+      name:
+        width: 1/3
+      does:
+        width: 1/3
+      website:
+        width: 1/3

@@ -1,4 +1,3 @@
-
 Title: About
 
 ----
@@ -18,11 +17,13 @@ Toward better.
 ----
 
 Connect:
+
 ##Connect
 
 If you want to get in touch for a project, it's best to (email: hi@solvak.ee text: e-mail me.) I'm also on (link: https://ee.linkedin.com/in/sandersolvak text: LinkedIn).
 
 ----
+
 Colophon:
 
 ##Colophon
@@ -30,96 +31,82 @@ Colophon:
 This site is designed and built by yours truly. The headings are set in (link: http://prospectus.losttype.com/ text: Prospectus) and the rest in (link: https://github.com/impallari/Libre-Franklin text: Libre Franklin.) It runs on a lovely little CMS called (link: https://www.getkirby.com/ text: Kirby). No tracking or snooping or bullshit. Simple.
 
 ----
-Blogroll:
 
-People I've learned a lot from and think you might too. Or just cool sites, in no particular order, a.k.a. a (link: https://en.wiktionary.org/wiki/blogroll text: blogroll).
+Blogroll: People I've learned a lot from and think you might too. Or just cool sites, in no particular order, a.k.a. a (link: https://en.wiktionary.org/wiki/blogroll text: blogroll).
 
 ----
 
 People:
 
-Frank Chimero:
-  Name: Frank Chimero
-  Does:  designer
-	Website: https://frankchimero.com/
+- 
+  name: Frank Chimero
+  does: designer
+  website: https://frankchimero.com/
+- 
+  name: Sara Soueidan
+  does: UI/UX developer
+  website: https://www.sarasoueidan.com/
+- 
+  name: Jeffrey Zeldman
+  does: designer
+  website: https://www.zeldman.com/
+- 
+  name: Mark Boulton
+  does: designer
+  website: https://markboulton.co.uk
+- 
+  name: Jen Simmons
+  does: designer/developer
+  website: https://jensimmons.com
+- 
+  name: Dan Mall
+  does: creative director
+  website: http://danmall.com
+- 
+  name: Rachel Andrew
+  does: developer
+  website: https://rachelandrew.co.uk/
+- 
+  name: Lea Verou
+  does: developer
+  website: https://lea.verou.me/
+- 
+  name: Craig Mod
+  does: 'writer & photographer'
+  website: https://craigmod.com/
+- 
+  name: Tobias van Schneider
+  does: designer
+  website: https://vanschneider.com/
+- 
+  name: Jonnie Hallman
+  does: 'designer & developer'
+  website: https://destroytoday.com/
+- 
+  name: James Jean
+  does: artist
+  website: http://www.jamesjean.com/
+- 
+  name: Brad Frost
+  does: 'designer & developer'
+  website: https://bradfrost.com/
+- 
+  name: Matt Smith
+  does: designer
+  website: http://mds.is/
+- 
+  name: Austin Kleon
+  does: a writer who draws
+  website: https://austinkleon.com/
+- 
+  name: Christopher Butler
+  does: designer
+  website: https://www.chrbutler.com/
+- 
+  name: Jason Santa Maria
+  does: designer
+  website: https://www.jasonsantamaria.com
 
-Sara Soueidan:
-	Name: Sara Soueidan
-	Does: UI/UX developer
-	Website: https://www.sarasoueidan.com/
+----
 
-Jeffrey Zeldman:
-	Name: Jeffrey Zeldman
-	Does: designer
-	Website: https://www.zeldman.com/
-
-Mark Boulton:
-	Name: Mark Boulton
-	Does: designer
-	Website: https://markboulton.co.uk
-
-Jen Simmons:
-	Name: Jen Simmons
-	Does: designer/developer
-	Website: https://jensimmons.com
-
-Dan Mall:
-	Name: Dan Mall
-	Does: creative director
-	Website: http://danmall.com
-
-Rachel Andrew:
-	Name: Rachel Andrew
-	Does: developer
-	Website: https://rachelandrew.co.uk/
-
-Lea Verou:
-	Name: Lea Verou
-	Does: developer
-	Website: https://lea.verou.me/
-
-Craig Mod:
-	Name: Craig Mod
-	Does: writer & photographer
-	Website: https://craigmod.com/
-
-Tobias van Schneider:
-	Name: Tobias van Schneider
-	Does: designer
-	Website: https://vanschneider.com/
-
-Jonnie Hallman:
-	Name: Jonnie Hallman
-	Does: designer & developer
-	Website: https://destroytoday.com/
-
-James Jean:
-	Name: James Jean
-	Does: artist
-	Website: http://www.jamesjean.com/
-
-Brad Frost:
-	Name: Brad Frost
-	Does: designer & developer
-	Website: https://bradfrost.com/
-
-Matt Smith:
-	Name: Matt Smith
-	Does: designer
-	Website: http://mds.is/
-
-
-Austin Kleon:
-	Name: Austin Kleon
-	Does: a writer who draws
-	Website: https://austinkleon.com/
-
-Christopher Butler
-  Name: Christopher Butler
-  Does: designer
-  Website: https://www.chrbutler.com/
-
-Jason Santa Maria
-  Name: Jason Santa Maria
-  Does: designer
-  Website: https://www.jasonsantamaria.com
+Uuid: 9o7s09chqdo6l597
