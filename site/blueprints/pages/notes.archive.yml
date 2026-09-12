@@ -1,0 +1,13 @@
+title: Notes archive
+icon: 🗄️
+
+options:
+  status: false
+  template: false
+
+columns:
+  - width: 1/1
+    sections:
+      info:
+        type: info
+        text: This page is rendered automatically from the notes list, grouped by month and paginated by year (/notes/archive/YYYY). There's nothing to edit here besides the title.

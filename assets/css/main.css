@@ -355,6 +355,47 @@ main.notes {
 	}
 
 }
+main.notes.archive {
+	& .archive-month {
+		margin-bottom: var(--l);
+		& h2 {
+			margin-top: var(--xl);
+		}
+	}
+	& .archive-notes {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		& li {
+			margin-bottom: var(--m);
+			& time {
+				display: inline-block;
+				margin: 0 0 0 var(--s);
+			}
+		}
+	}
+	& .archive-years {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--l);
+		margin: 0 0 var(--l);
+		padding: 0;
+		&:last-of-type {
+			margin-top: var(--xl);
+		}
+		font-size: var(--text);
+		/* override the site-wide old-style figures (onum): the bold face's
+		   old-style digits render inconsistently in Chrome, so force lining
+		   figures here for a consistent look across weights */
+		font-variant-numeric: lining-nums;
+		font-feature-settings: "lnum" 1, "kern" 1;
+		& a.is-current {
+			font-weight: bold;
+			text-decoration-thickness: 0.12rem;
+		}
+	}
+}
 main.play {
 	& .thumbs {
 		margin-bottom: var(--xl);
