@@ -48,6 +48,8 @@
 		</div>
 	<?php endif ?>
 
-	<p><a href="<?= page('notes/archive')->url() ?>">Browse the archive</a></p>
+	<?php if ($archive = page('notes/archive')): ?>
+		<p><a href="<?= $archive->url() ?>">Browse the archive</a></p>
+	<?php endif ?>
 
 <?php snippet('footer') ?>

@@ -14,6 +14,7 @@ content/4_photo/**/*.jpg
 content/1_notes/**/*.jpg
 content/1_notes/**/*.png
 content/1_notes/**/*.txt
+!content/1_notes/archive/notes.archive.txt
 
 # System files
 # ------------
