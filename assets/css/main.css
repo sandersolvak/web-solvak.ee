@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5 {
 	}
 }
 h1, .h1 {
-	font-size: 3rem;
+	font-size: 2.2rem;
 	margin-top: 4rem;
 	line-height: 0.9;
 }
@@ -192,11 +192,12 @@ a {
 	text-decoration: underline;
 	text-decoration-color: var(--brand-color);
 	text-decoration-skip-ink: auto;
-	text-decoration-thickness: 2px;
+	text-decoration-thickness: 0.06rem;
+	text-underline-offset: 0.16rem;
 	color: var(--heading-color);
 	transition: var(--fast);
 	&:hover {
-		text-decoration-thickness: 3px;
+		text-decoration-thickness: 0.12rem;
 		transition: var(--fast);
 		&::after {
 			/* colors the arrow on .link-arrow::after type of links on hover */
@@ -262,6 +263,11 @@ nav, main {
 	padding-left: 32px;
 	padding-right: 32px;
 	margin-bottom: var(--l);
+	@media(min-width: 841px) {
+		margin-left: 80px;
+		margin-right: auto;
+		padding-left: 0;
+	}
 }
 nav, main, footer {
 	@media(max-width: 840px) {
@@ -274,10 +280,11 @@ main.home,
 main.about { /* homepage layout */
 	& article {
 		display: grid;
-		grid-template-columns: minmax(300px, 300px) minmax(476px, 1fr);
+		grid-template-columns: 1fr;
 		grid-template-rows: auto;
 		grid-template-areas:
-		"col-1 col-2";
+		"col-1"
+		"col-2";
 		margin-top: var(--xl);
 		@media(max-width: 840px) {
 			display: block;
@@ -789,7 +796,6 @@ nav, .controls {
 	grid-auto-rows: 80px;
 	grid-auto-flow: row;
 	grid-gap: 0px;
-	padding-left: 32px;
 	font-size: var(--text);
 	@media(max-width: 420px) {
 		grid-template-columns: repeat(auto-fill, minmax(64px, 64px));
@@ -858,6 +864,10 @@ footer {
 		width: 100%;
 		max-width: 1214px;
 		margin: 0 auto;
+		@media(min-width: 841px) {
+			margin-left: 48px;
+			margin-right: auto;
+		}
 	}
 	& .nav-footer {
 		display: flex;
