@@ -13,6 +13,7 @@
 		foreach ($site->children()->listed() as $item): ?>
 		<?= $item->title()->link() ?>
 		<?php endforeach ?>
+		<a href="<?= url('feed') ?>">RSS</a>
 
 	</div>
 	<small><?= $site->copyright() ?> <span class="sun">
