@@ -641,8 +641,12 @@ article {
 			position: relative;
 		}
 		& .cover {
+			height: auto;
+			max-height: none;
 			& img {
 				width: 100%;
+				height: auto;
+				margin-bottom: 0;
 			}
 		}
 		& header + .col-2 {
@@ -686,7 +690,8 @@ article {
 				height: auto;
 				& img {
 					width: 100%;
-					height: 100%;
+					height: auto;
+					aspect-ratio: 1 / 1;
 					object-fit: cover;
 					display: block;
 				}
