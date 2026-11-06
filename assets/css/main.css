@@ -16,10 +16,14 @@
 	--brand-color: hsla(44, 100%, 54%, 1);
 	--brand-color--l: hsla(44, 100%, 54%, 0.24);
 	--heading-color: hsla(44, 20%, 10%, 1.0);
-	--text-color: hsla(44, 0%, 10%, 0.82);
-	--meta-color: hsla(44, 0%, 26%, 0.76);
+	--on-brand-color: hsla(44, 20%, 10%, 1.0); /* light theme heading color, kept in both themes for text on brand-color */
+	--text-color: hsla(44, 0%, 10%, 0.8);
+	--meta-color: hsla(44, 0%, 26%, 0.7);
 	--red-color: hsla(359, 84%, 44%, 1.0);
 	--light-gray-color: hsla(44, 0%, 26%, 0.08);
+	--background-color: hsla(50, 33%, 96%, 1);
+
+	color-scheme: light;
 
 	/* font sizes */
 	--text: 1rem;
@@ -29,6 +33,28 @@
 	/* animation */
 	--fast: 0.2s;
 	--slow: 0.8s;
+}
+
+/* Dark mode: follows the visitor's system setting unless they pick a theme with the toggle */
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) {
+		--heading-color: hsla(50, 33%, 96%, 1.0);
+		--text-color: hsla(50, 33%, 96%, 0.8);
+		--meta-color: hsla(50, 33%, 96%, 0.7);
+		--red-color: hsla(359, 84%, 64%, 1.0);
+		--light-gray-color: hsla(50, 33%, 96%, 0.08);
+		--background-color: hsla(300, 20%, 8%, 1);
+		color-scheme: dark;
+	}
+}
+:root[data-theme="dark"] {
+	--heading-color: hsla(50, 33%, 96%, 1.0);
+	--text-color: hsla(50, 33%, 96%, 0.8);
+	--meta-color: hsla(50, 33%, 96%, 0.7);
+	--red-color: hsla(359, 84%, 64%, 1.0);
+	--light-gray-color: hsla(50, 33%, 96%, 0.08);
+	--background-color: hsla(300, 20%, 8%, 1);
+	color-scheme: dark;
 }
 
 /*----------------------------
@@ -46,7 +72,7 @@ body {
 	font-kerning: normal;
 	font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
 	line-height: 1.5;
-	background-color: #f9f8f3;
+	background-color: var(--background-color);
 	padding: 0;
 	margin: auto;
 	display: flex;
@@ -127,7 +153,7 @@ h1, h2, h3, h4, h5 {
 	color: var(--heading-color);
 	& a {
 		text-decoration-thickness: 0px;
-		text-decoration-color: #f9f8f3;
+		text-decoration-color: var(--background-color);
 		&:hover {
 			color: var(--text-color);
 			text-decoration: underline;
@@ -345,8 +371,8 @@ main.notes {
 		background: linear-gradient(90deg,
 			var(--light-gray-color) 0%,
 			var(--light-gray-color) 46%,
-			#f9f8f3 46%,
-			#f9f8f3 54%,
+			var(--background-color) 46%,
+			var(--background-color) 54%,
 			var(--light-gray-color) 54%,
 			var(--light-gray-color) 100%);
 			@media(max-width: 480px) {
@@ -776,10 +802,11 @@ article {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			background-color: #f9f8f3;
+			background-color: var(--background-color);
 			opacity: 0.5;
 			&:hover {
 				opacity: 1;
+				color: var(--heading-color);
 				background-color: var(--brand-color);
 			}
 		}
@@ -787,7 +814,7 @@ article {
 			opacity: 0.5;
 			&:hover {
 				opacity: 0.5;
-				background-color: #f9f8f3;
+				background-color: var(--background-color);
 			}
 		}
 	}
@@ -863,14 +890,17 @@ nav, .controls {
 		height: 100%;
 		width: 100%;
 		&:hover {
+			color: var(--on-brand-color);
 			background-color: var(--brand-color);
 		}
 		&:active {
 			transform: scale(1);
+			color: var(--on-brand-color);
 			background-color: var(--brand-color);
 		}
 		&.active {
 			transition: var(--slow);
+			color: var(--on-brand-color);
 			background-color: var(--brand-color);
 			&:hover {
 
@@ -878,7 +908,7 @@ nav, .controls {
 		}
 		&.home {
 			& svg {
-				fill: var(--heading-color);
+				fill: currentColor;
 				width: 32px;
 				transition: var(--slow);
 			}
@@ -937,6 +967,29 @@ footer {
 			width: 1rem;
 			fill: currentColor;
 		}
+		& .theme-toggle {
+			display: flex;
+			align-items: center;
+			background: none;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			font: inherit;
+			cursor: pointer;
+			transition: var(--fast);
+			&:hover {
+				color: var(--brand-color);
+			}
+			& svg {
+				width: 1rem;
+				height: 1rem;
+				fill: currentColor;
+			}
+			/* Show the moon in light mode and the sun in dark mode */
+			& .icon-sun {
+				display: none;
+			}
+		}
 
 	}
 	& .sun {
@@ -951,6 +1004,17 @@ footer {
 		animation: spin 3s infinite linear;
 	}
 }
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme="light"]) footer .theme-toggle {
+		& .icon-sun { display: block; }
+		& .icon-moon { display: none; }
+	}
+}
+:root[data-theme="dark"] footer .theme-toggle {
+	& .icon-sun { display: block; }
+	& .icon-moon { display: none; }
+}
+
 /*----------------------------
 	# Miscellaneous debris
 ----------------------------*/
