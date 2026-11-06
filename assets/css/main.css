@@ -19,7 +19,6 @@
 	--on-brand-color: hsla(44, 20%, 10%, 1.0); /* light theme heading color, kept in both themes for text on brand-color */
 	--text-color: hsla(44, 0%, 10%, 0.8);
 	--meta-color: hsla(44, 0%, 26%, 0.7);
-	--red-color: hsla(359, 84%, 44%, 1.0);
 	--light-gray-color: hsla(44, 0%, 26%, 0.08);
 	--background-color: hsla(50, 33%, 96%, 1);
 
@@ -41,7 +40,6 @@
 		--heading-color: hsla(50, 33%, 96%, 1.0);
 		--text-color: hsla(50, 33%, 96%, 0.8);
 		--meta-color: hsla(50, 33%, 96%, 0.7);
-		--red-color: hsla(359, 84%, 64%, 1.0);
 		--light-gray-color: hsla(50, 33%, 96%, 0.08);
 		--background-color: hsla(300, 20%, 8%, 1);
 		color-scheme: dark;
@@ -51,7 +49,6 @@
 	--heading-color: hsla(50, 33%, 96%, 1.0);
 	--text-color: hsla(50, 33%, 96%, 0.8);
 	--meta-color: hsla(50, 33%, 96%, 0.7);
-	--red-color: hsla(359, 84%, 64%, 1.0);
 	--light-gray-color: hsla(50, 33%, 96%, 0.08);
 	--background-color: hsla(300, 20%, 8%, 1);
 	color-scheme: dark;
@@ -995,13 +992,26 @@ footer {
 	& .sun {
 		fill: currentColor;
 		display: inline-block;
-		width: 10px;
-		height: 10px;
-		transform-origin: 48.5% 77.5%;
+		width: 14px;
+		height: 14px;
+		margin-right: 0.5rem;
+		vertical-align: -0.221em; /* centres the sun on the cap height of the copyright text */
+		& svg {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		& path {
+			/* Rotate the drawing inside the SVG around the viewBox centre, which avoids the pixel wobble of rotating the element */
+			transform-box: view-box;
+			transform-origin: 50% 50%;
+		}
 	}
 	&:hover .sun{
-		fill: var(--red-color);
-		animation: spin 3s infinite linear;
+		fill: var(--brand-color);
+		& path {
+			animation: spin 3s infinite linear;
+		}
 	}
 }
 @media (prefers-color-scheme: dark) {
