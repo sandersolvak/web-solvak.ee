@@ -958,6 +958,7 @@ footer {
 			}
 			&.home {
 				border-bottom: none;
+				text-decoration: none;
 			}
 		}
 		& .home svg{
