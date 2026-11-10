@@ -8,13 +8,23 @@ columns:
       info:
         type: fields
         fields:
-          cover:
-            type: text
-            help: 'syntax ('image: imagename.jpg class: cover)'
+          coverImage:
+            label: Cover image
+            type: files
+            multiple: false
+            query: page.images
+            store: id
+            layout: cards
+            image:
+              cover: true
           link:
             type: text
           text:
             type: textarea
+          cover:
+            label: Cover (old syntax)
+            type: text
+            help: For older posts only. New posts use Cover image above, which takes priority if both are set.
 
 
   - width: 1/3

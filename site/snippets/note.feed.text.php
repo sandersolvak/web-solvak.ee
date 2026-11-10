@@ -1,6 +1,6 @@
 
-<?php if ($article->cover()->isNotEmpty()) : ?>
-		<?= $article->cover()->kt() ?>
+<?php if ($article->hasCover()) : ?>
+		<?= $article->coverHtml('cover') ?>
 <?php endif ?>
 
 <header class="sticky">

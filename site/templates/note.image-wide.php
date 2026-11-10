@@ -6,9 +6,9 @@
 
 	<article class="post wide">
 		<!-- Cover image -->
-		<?php if ($page->cover()->isNotEmpty()) : ?>
+		<?php if ($page->hasCover()) : ?>
 			<a href="<?= $page->link() ?>">
-				<?= $page->cover()->kt() ?>
+				<?= $page->coverHtml('cover') ?>
 			</a>
 		<?php endif ?>
 

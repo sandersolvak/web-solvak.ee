@@ -5,9 +5,9 @@
 <main class="notes">
 
 	<article class="post tall">
-		<?php if ($page->cover()->isNotEmpty()) : ?>
+		<?php if ($page->hasCover()) : ?>
 			<a href="<?= $page->link() ?>" class="cover">
-				<?= $page->cover()->kt() ?>
+				<?= $page->coverHtml() ?>
 			</a>
 		<?php endif ?>
 

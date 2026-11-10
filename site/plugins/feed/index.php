@@ -51,10 +51,9 @@ function feedItem(Page $article): string
         ? $article->date()->toTimestamp()
         : $article->modified();
 
-    $coverFilename = feedCoverFilename($article);
-    $coverFile     = $coverFilename ? $article->file($coverFilename) : null;
+    $coverFile = $article->coverFile();
 
-    $description = feedDescription($article, $coverFilename);
+    $description = feedDescription($article, $coverFile?->filename());
 
     $item  = '<item>' . "\n";
     $item .= '<title>' . Xml::encode($title) . '</title>' . "\n";
@@ -72,25 +71,6 @@ function feedItem(Page $article): string
     return $item;
 }
 
-/**
- * The "cover" field is free text holding a kirbytag,
- * e.g. "(image: my-photo.jpg class: cover)" - extract the filename from it.
- */
-function feedCoverFilename(Page $article): string|null
-{
-    $cover = $article->cover();
-
-    if ($cover->isEmpty()) {
-        return null;
-    }
-
-    if (preg_match('/\(image:\s*([^\s)]+)/i', $cover->value(), $matches) === 1) {
-        return trim($matches[1]);
-    }
-
-    return null;
-}
-
 function feedDescription(Page $article, string|null $coverFilename): string
 {
     $ledeValue = $article->lede()->isNotEmpty() ? $article->lede()->value() : '';
@@ -103,7 +83,7 @@ function feedDescription(Page $article, string|null $coverFilename): string
     $html = '';
 
     if ($coverFilename && !$coverAlreadyInContent) {
-        $html .= $article->cover()->kt();
+        $html .= $article->coverHtml('cover');
     }
 
     if ($ledeValue !== '') {

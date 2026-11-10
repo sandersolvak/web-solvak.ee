@@ -6,8 +6,8 @@
 
 	<article class="post">
 		<!-- Cover image -->
-		<?php if ($page->cover()->isNotEmpty()) : ?>
-				<?= $page->cover()->kt() ?>
+		<?php if ($page->hasCover()) : ?>
+				<?= $page->coverHtml('cover') ?>
 		<?php endif ?>
 
 		<header class="sticky">

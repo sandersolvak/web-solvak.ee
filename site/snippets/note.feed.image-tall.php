@@ -1,7 +1,7 @@
 
-<?php if ($article->cover()->isNotEmpty()) : ?>
+<?php if ($article->hasCover()) : ?>
 	<a href="<?= $article->url() ?>" class="cover">
-		<?= $article->cover()->kt() ?>
+		<?= $article->coverHtml() ?>
 	</a>
 <?php endif ?>
 
